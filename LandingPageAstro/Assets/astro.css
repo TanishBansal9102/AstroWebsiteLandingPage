@@ -1,0 +1,23 @@
+body, html {
+  height: 100%;
+}
+body{
+  margin:0px;
+  color:#505962;
+}
+
+.navbar{
+  background-color: rgba(180, 53, 53, 0.2);
+}
+
+.navbar-brand{
+  height:2 rem;
+}
+
+#planetvid{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
