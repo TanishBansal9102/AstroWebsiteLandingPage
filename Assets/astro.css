@@ -26,3 +26,80 @@ body{
   width:100%;
   height: 100%;
 }
+
+
+#myBtn {
+	z-index: 1;
+	padding: 10px 12px;
+	background-color: black;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	display: block;
+	height: 65px;
+	width: 185px;
+	position: relative;
+	margin: auto auto;
+	font-family: monospace;
+	transition: all 0.2s linear;
+	align-items: center;
+}
+
+#myBtn:hover {
+	transition: 1s ease-in-out;
+	transform: scale(1.2);
+	background: #000000;
+	border: 2px solid #ffffff;
+}
+#myBtn:hover span {
+	color: #ffffff;
+}
+
+svg {
+	display: inline;
+	position: absolute;
+	left: -1px;
+	top: -14px;
+	fill: none;
+	stroke: #1984ff;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+}
+.border2 {
+	display: none;
+}
+
+#myBtn:hover svg {
+	stroke-dashoffset: -480;
+}
+
+#myBtn span {
+	color: white;
+	font-size: 20px;
+	font-weight: 100;
+}
+.fa {
+	margin-right: 20px;
+	animation-name: animate ease-in-out;
+}
+
+.btntext {
+	align-self: center;
+	vertical-align: middle;
+	display: inline;
+}
+
+@keyframes animate {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
