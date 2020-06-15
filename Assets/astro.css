@@ -44,7 +44,7 @@ body{
 	height: 65px;
 	width: 185px;
 	position: relative;
-	margin: auto auto;
+	margin: -200px auto;
 	font-family: monospace;
 	transition: all 0.2s linear;
 	align-items: center;
