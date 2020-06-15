@@ -38,7 +38,7 @@ body{
 	height: 65px;
 	width: 185px;
 	position: relative;
-	margin: auto auto;
+	margin: auto 1000px;
 	font-family: monospace;
 	transition: all 0.2s linear;
 	align-items: center;
