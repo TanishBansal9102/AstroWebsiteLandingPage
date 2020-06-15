@@ -1,5 +1,6 @@
-body, html {
+html {
   height: 100%;
+  overflow-y:scroll;
 }
 body{
   margin:0px;
@@ -7,7 +8,7 @@ body{
 }
 
 .navbar{
-  background-color: rgba(180, 53, 53, 0.2);
+  background-color: rgba(180, 53, 53, 0.3);
 }
 
 .navbar-brand{
