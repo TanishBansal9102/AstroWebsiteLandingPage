@@ -93,10 +93,20 @@ svg {
 	}
 }
 .logo {
-	height: 40px;
-	width: 100px;
+	height: 55px;
+	width: 92px;
 	border-collapse: collapse;
+	padding: 0px;
+        margin-top: 0em;
 }
 .navbar{
 	background-color: #000000;
+}
+ul {
+	position: fixed;
+	right:30px;
+}
+li{
+	margin-left: 15px;
+	padding-left: 5px;
 }
