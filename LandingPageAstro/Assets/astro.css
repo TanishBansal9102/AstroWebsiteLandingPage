@@ -14,10 +14,11 @@ body{
   min-width: 100%;
   min-height: 100%;
 }
+
 #myBtn {
 	z-index: 1;
 	display: none;
-	padding: 10px 12px;
+	padding-left:0px;
 	background-color: black;
 	border: 2px solid #ffffff;
 	color: #ffffff;
@@ -30,13 +31,12 @@ body{
 	display: block;
 	height: 70px;
 	width: 185px;
+	margin:auto auto;
 	position: relative;
-	margin: auto auto;
 	font-family: monospace;
 	transition: all 0.2s linear;
 	align-items: center;
-	margin-top: 440px ;
-	
+	margin-top: 36%;
 }
 
 #myBtn:hover {
