@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="Assets/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="Assets/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="Assets/astro.css">
   <title>Document</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><img class="logo" src="astroclublogo.jpeg"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,14 +40,20 @@
       </ul>
     </div>
   </nav>
+  
+  
 
   <div class="video-background">
     <div class = "video-wrap">
-      <video id = "planetvid" autoplay playinline muted width="1200">
+      <video id = "planetvid" autoplay playinline muted width="657">
         <source src="Video.mp4" type="video/mp4">
       </video>
     </div>
   </div>
+<script>
+  setTimeout(function () {
+    $("myBtn").hide(0).delay(14000).fadeIn(2000);});
+</script>
 <button id="myBtn" class="bg">
 			<!--For animation-->
 		<svg
