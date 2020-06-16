@@ -7,15 +7,6 @@ body{
   color:#505962;
 }
 
-.navbar{
-  background-color: rgba(180, 53, 53, 0.3);
-}
-
-.navbar-brand{
-  height:2 rem;
-
-}
-
 #planetvid{
   position: fixed;
   right: 0;
