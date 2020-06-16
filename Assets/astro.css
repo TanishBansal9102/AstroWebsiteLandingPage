@@ -13,6 +13,7 @@ body{
 
 .navbar-brand{
   height:2 rem;
+
 }
 
 #planetvid{
@@ -24,6 +25,7 @@ body{
 }
 #myBtn {
 	z-index: 1;
+	display: none;
 	padding: 10px 12px;
 	background-color: black;
 	border: 2px solid #ffffff;
@@ -35,13 +37,15 @@ body{
 	text-decoration: none;
 	font-size: 15px;
 	display: block;
-	height: 65px;
+	height: 70px;
 	width: 185px;
 	position: relative;
 	margin: auto auto;
 	font-family: monospace;
 	transition: all 0.2s linear;
 	align-items: center;
+	margin-top: 440px ;
+	
 }
 
 #myBtn:hover {
@@ -96,4 +100,12 @@ svg {
 	to {
 		opacity: 1;
 	}
+}
+.logo {
+	height: 40px;
+	width: 100px;
+	border-collapse: collapse;
+}
+.navbar{
+	background-color: #000000;
 }
