@@ -41,7 +41,6 @@ body{
 
 #myBtn:hover {
 	transition: 1s ease-in-out;
-	transform: scale(1.2);
 	background: #000000;
 	border: 2px solid #ffffff;
 }
@@ -99,9 +98,7 @@ svg {
 	padding: 0px;
         margin-top: 0em;
 }
-.navbar{
-	background-color: #000000;
-}
+
 ul {
 	position: fixed;
 	right:30px;
