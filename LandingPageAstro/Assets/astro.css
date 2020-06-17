@@ -5,6 +5,7 @@ html {
 body{
   margin:0px;
   color:#505962;
+  background-color:#000000;	
 }
 
 #planetvid{
@@ -19,7 +20,7 @@ body{
 @media (max-width: 510px){
 	#planetvid{
 	position: fixed;
-	width: 510px;
+	width: 480px;
 	height: auto;
   	right: 0;
   	bottom: 0;
