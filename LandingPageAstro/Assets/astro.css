@@ -16,10 +16,10 @@ body{
   min-height: 100%;
 }
 
-@media (max-width: 480px){
+@media (max-width: 510px){
 	#planetvid{
 	position: fixed;
-	width: 480px;
+	width: 510px;
 	height: auto;
   	right: 0;
   	bottom: 0;
