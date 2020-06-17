@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  overflow-y:scroll;
+}
+body{
+  margin:0px;
+  background-color:#000000;
+  color:#505962;
+}
+
+#planetvid{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#myBtn {
+	z-index: 1;
+	position: absolute;
+	padding-left: 0px;
+	background-color: black;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	display: block;
+	height: 70px;
+	width: 185px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: monospace;
+	transition: all 0.2s linear;
+	align-items: center;
+	margin-bottom: 5em; /*change this to specify distance from bottom*/
+	bottom: 0;
+}
+
+#myBtn:hover {
+	transition: 1s ease-in-out;
+	background: #000000;
+	border: 2px solid #ffffff;
+}
+#myBtn:hover span {
+	color: #ffffff;
+}
+
+svg {
+	display: inline;
+	position: absolute;
+	left: -1px;
+	top: -14px;
+	fill: none;
+	stroke: #1984ff;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+}
+.border2 {
+	display: none;
+}
+
+#myBtn:hover svg {
+	stroke-dashoffset: -480;
+}
+
+#myBtn span {
+	color: white;
+	font-size: 20px;
+	font-weight: 100;
+}
+.fa {
+	margin-right: 20px;
+	animation-name: animate ease-in-out;
+}
+
+.btntext {
+	align-self: center;
+	vertical-align: middle;
+	display: inline;
+}
+
+@keyframes animate {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.logo {
+	height: 55px;
+	width: 92px;
+	border-collapse: collapse;
+	padding: 0px;
+        margin-top: 0em;
+}
+
+ul {
+	position: fixed;
+	right:30px;
+}
+li{
+	margin-left: 15px;
+	padding-left: 5px;
+}
