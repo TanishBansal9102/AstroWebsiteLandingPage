@@ -16,6 +16,19 @@ body{
   min-height: 100%;
 }
 
+@media (max-width: 480px){
+	#planetvid{
+	position: fixed;
+	width: 480px;
+	height: auto;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+	min-height: 100%;
+	transform: translateX(8%);
+	}
+}
+
 #myBtn {
 	z-index: 1;
 	position: absolute;
