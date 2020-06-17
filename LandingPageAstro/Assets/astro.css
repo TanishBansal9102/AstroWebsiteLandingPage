@@ -17,8 +17,8 @@ body{
 
 #myBtn {
 	z-index: 1;
-	display: none;
-	padding-left:0px;
+	position: absolute;
+	padding-left: 0px;
 	background-color: black;
 	border: 2px solid #ffffff;
 	color: #ffffff;
@@ -31,12 +31,15 @@ body{
 	display: block;
 	height: 70px;
 	width: 185px;
-	margin:auto auto;
-	position: relative;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	font-family: monospace;
 	transition: all 0.2s linear;
 	align-items: center;
-	margin-top: 36%;
+	margin-bottom: 5em; /*change this to specify distance from bottom*/
+	bottom: 0;
 }
 
 #myBtn:hover {
