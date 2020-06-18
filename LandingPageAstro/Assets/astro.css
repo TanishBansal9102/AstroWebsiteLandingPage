@@ -1,33 +1,24 @@
 html {
-  height: 100%;
-  overflow-y:scroll;
+	height: 100%;
+	overflow-y: scroll;
 }
-body{
-  margin:0px;
-  color:#505962;
-  background-color:#000000;	
-}
-
-#planetvid{
-  position: fixed;
-  width: 1200px;	
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+body {
+	margin: 0px;
+	color: #505962;
+	background-color: #000000;
 }
 
-@media (max-width: 510px){
-	#planetvid{
+#planetvid {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
-	width: 480px;
-	height: auto;
-  	right: 0;
-  	bottom: 0;
-  	min-width: 100%;
-	min-height: 100%;
-	transform: translateX(10.5%);
-	}
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+/*needs more styling perhaps*/
+.video-background {
 }
 
 #myBtn {
@@ -42,7 +33,6 @@ body{
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
-	font-size: 15px;
 	display: block;
 	height: 70px;
 	width: 185px;
@@ -87,7 +77,7 @@ svg {
 
 #myBtn span {
 	color: white;
-	font-size: 20px;
+	font-size: 2em;
 	font-weight: 100;
 }
 .fa {
@@ -114,14 +104,109 @@ svg {
 	width: 92px;
 	border-collapse: collapse;
 	padding: 0px;
-        margin-top: 0em;
+	margin-top: 0em;
 }
 
 ul {
 	position: fixed;
-	right:30px;
+	right: 30px;
 }
-li{
+li {
 	margin-left: 15px;
 	padding-left: 5px;
+}
+
+/* Let's style the wrapper */
+.wrapper {
+	z-index: 1;
+	position: absolute;
+	bottom: 10em;
+	right: 0;
+	width: 50px;
+}
+
+/* Style the Un-order list by setting its list-style to none */
+.wrapper ul {
+	list-style: none;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height 
+  and float them to left
+ */
+.wrapper ul li {
+	width: 100%;
+	height: 75px;
+	line-height: 75px;
+	margin: 0 2px;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px 
+to align it properly */
+.wrapper ul li .fa {
+	color: #d8e2dc;
+	margin-top: 5px;
+	transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.wrapper ul li:hover.facebook {
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+	color: #7298e9;
+	text-shadow: 0 0 15px #7298e9;
+	transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+	transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+	color: #e952b9;
+	text-shadow: 0 0 15px #e952b9;
+	transition: all 0.5s ease;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+	.border2 {
+		display: inline;
+	}
+	.border1 {
+		display: none;
+	}
+	#myBtn {
+		height: 60px;
+		width: 130px;
+	}
+	#myBtn span {
+		color: white;
+		font-size: 1.5em;
+		font-weight: 100;
+	}
+	svg {
+		top: 0;
+	}
+	.wrapper {
+		width: 50px;
+		margin-left: 3em;
+		right: -10em;
+		bottom: 7em;
+	}
+	.wrapper ul li {
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 1px;
+	}
 }
