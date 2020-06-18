@@ -9,10 +9,11 @@ body{
 }
 
 #planetvid{
-  position: static;
-  max-width: 100%;	
+  position: fixed;
+  width: 1200px;	
   right: 0;
   bottom: 0;
+  min-width: 100%;
   min-height: 100%;
 }
 
