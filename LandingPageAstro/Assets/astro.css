@@ -47,6 +47,19 @@ body {
 	bottom: 0;
 }
 
+@media (max-width: 510px){
+	#planetvid{
+	position: fixed;
+	width: 480px;
+	height: auto;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+	min-height: 100%;
+	transform: translateX(8%);
+	}
+}
+
 #myBtn:hover {
 	transition: 1s ease-in-out;
 	background: #000000;
