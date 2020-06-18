@@ -23,7 +23,6 @@ body {
 #myBtn {
 	z-index: 1;
 	position: absolute;
-	padding-left: 0px;
 	background-color: black;
 	border: 2px solid #ffffff;
 	color: #ffffff;
@@ -33,29 +32,18 @@ body {
 	text-align: center;
 	text-decoration: none;
 	display: block;
-	height: 70px;
-	width: 185px;
+	height: 50px;
+	width: 175px;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: monospace;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	transition: all 0.2s linear;
 	align-items: center;
 	margin-bottom: 5em; /*change this to specify distance from bottom*/
 	bottom: 0;
-}
-
-@media (max-width: 510px){
-	#planetvid{
-	position: fixed;
-	width: 480px;
-	height: auto;
-  	right: 0;
-  	bottom: 0;
-  	min-width: 100%;
-	min-height: 100%;
-	}
 }
 
 #myBtn:hover {
@@ -63,15 +51,12 @@ body {
 	background: #000000;
 	border: 2px solid #ffffff;
 }
-#myBtn:hover span {
-	color: #ffffff;
-}
 
 svg {
-	display: inline;
+	display: block;
 	position: absolute;
-	left: -1px;
-	top: -14px;
+	left: -3px;
+	top: -2px;
 	fill: none;
 	stroke: #1984ff;
 	stroke-dasharray: 150 480;
@@ -86,20 +71,12 @@ svg {
 	stroke-dashoffset: -480;
 }
 
-#myBtn span {
+.btntext {
+	display: inline-block;
+	vertical-align: bottom;
 	color: white;
 	font-size: 2em;
 	font-weight: 100;
-}
-.fa {
-	margin-right: 20px;
-	animation-name: animate ease-in-out;
-}
-
-.btntext {
-	align-self: center;
-	vertical-align: middle;
-	display: inline;
 }
 
 @keyframes animate {
@@ -197,10 +174,10 @@ to align it properly */
 		display: none;
 	}
 	#myBtn {
-		height: 60px;
+		height: 50px;
 		width: 130px;
 	}
-	#myBtn span {
+	#myBtn .btntext {
 		color: white;
 		font-size: 1.5em;
 		font-weight: 100;
