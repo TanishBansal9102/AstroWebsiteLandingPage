@@ -23,7 +23,6 @@ body {
 #myBtn {
 	z-index: 1;
 	position: absolute;
-	padding-left: 0px;
 	background-color: black;
 	border: 2px solid #ffffff;
 	color: #ffffff;
@@ -33,29 +32,18 @@ body {
 	text-align: center;
 	text-decoration: none;
 	display: block;
-	height: 70px;
-	width: 185px;
+	height: 50px;
+	width: 175px;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: monospace;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	transition: all 0.2s linear;
 	align-items: center;
 	margin-bottom: 5em; /*change this to specify distance from bottom*/
 	bottom: 0;
-}
-
-@media (max-width: 510px){
-	#planetvid{
-	position: fixed;
-	width: 480px;
-	height: auto;
-  	right: 0;
-  	bottom: 0;
-  	min-width: 100%;
-	min-height: 100%;
-	}
 }
 
 #myBtn:hover {
@@ -63,15 +51,12 @@ body {
 	background: #000000;
 	border: 2px solid #ffffff;
 }
-#myBtn:hover span {
-	color: #ffffff;
-}
 
 svg {
-	display: inline;
+	display: block;
 	position: absolute;
-	left: -1px;
-	top: -14px;
+	left: -3px;
+	top: -2px;
 	fill: none;
 	stroke: #1984ff;
 	stroke-dasharray: 150 480;
@@ -86,20 +71,12 @@ svg {
 	stroke-dashoffset: -480;
 }
 
-#myBtn span {
+.btntext {
+	display: inline-block;
+	vertical-align: bottom;
 	color: white;
 	font-size: 2em;
 	font-weight: 100;
-}
-.fa {
-	margin-right: 20px;
-	animation-name: animate ease-in-out;
-}
-
-.btntext {
-	align-self: center;
-	vertical-align: middle;
-	display: inline;
 }
 
 @keyframes animate {
@@ -141,7 +118,7 @@ li {
 	list-style: none;
 }
 
-/* Style the list items inside the UL list, by setting its width, height and line-height 
+/* Style the list items inside the UL list, by setting its width, height and line-height
   and float them to left
  */
 .wrapper ul li {
@@ -155,7 +132,7 @@ li {
 	transition: all 0.5s ease;
 }
 
-/* Style the icons by setting its color and margin-top value to 20px 
+/* Style the icons by setting its color and margin-top value to 20px
 to align it properly */
 .wrapper ul li .fa {
 	color: #d8e2dc;
@@ -197,10 +174,10 @@ to align it properly */
 		display: none;
 	}
 	#myBtn {
-		height: 60px;
+		height: 50px;
 		width: 130px;
 	}
-	#myBtn span {
+	#myBtn .btntext {
 		color: white;
 		font-size: 1.5em;
 		font-weight: 100;
@@ -219,5 +196,109 @@ to align it properly */
 		height: 50px;
 		line-height: 50px;
 		margin-top: 1px;
+	}
+}
+
+.navbar
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: calc((80/768) * ((100vw + 100vh) / 2));
+
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar .logo
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	height: calc((40/768) * ((100vw + 100vh) / 2));
+	width: calc((100/768) * ((100vw + 100vh) / 2));
+
+	margin: calc((20/768) * ((100vw + 100vh) / 2));
+
+	background-image: url('logo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar .navbuttons
+{
+	position: absolute;
+	top: calc((80/768) * ((100vw + 100vh) / 2));
+	right: calc((40/768) * ((100vw + 100vh) / 2));
+
+	height: calc((80/768) * ((100vw + 100vh) / 2));
+}
+
+.navbar .navbuttons .navbutton
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+	width: calc((80/768) * ((100vw + 100vh) / 2));
+
+	float: none;
+	padding: calc((15/768) * ((100vw + 100vh) / 2)) 0px;
+
+	text-align: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: calc((12/768) * ((100vw + 100vh) / 2));
+	color: #ffffff;
+
+	opacity: 0;
+	transform: translateX(calc((40/768) * ((100vw + 100vh) / 2)));
+	transition: opacity 500ms ease-in-out 0s, transform 500ms ease-in-out 0s;
+	-webkit-transition: opacity 500ms ease-in-out 0s, transform 500ms ease-in-out 0s;
+}
+
+.navbar .togglebutton
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	width: calc((100/768) * ((100vw + 100vh) / 2));
+	height: calc((80/768) * ((100vw + 100vh) / 2));
+}
+
+.navbar .togglebutton svg
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 100%;
+	fill: #ffffff;
+}
+
+.navbar .togglebutton svg .line
+{
+	transition: width 500ms ease-in-out 0s, x 500ms ease-in-out 0s;
+	-webkit-transition: width 500ms ease-in-out 0s, x 500ms ease-in-out 0s;
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar .navbuttons
+	{
+		position: absolute;
+		top: 0px;
+		right: calc((100/768) * ((100vw + 100vh) / 2));
+	}
+	.navbar .navbuttons .navbutton
+	{
+		float: left;
+		padding: calc((34/768) * ((100vw + 100vh) / 2)) 0px;
+
+		text-align: center
 	}
 }

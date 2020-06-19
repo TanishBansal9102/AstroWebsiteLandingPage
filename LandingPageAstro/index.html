@@ -2,9 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
 
-		<link rel="stylesheet" type="text/css" href="Assets/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="Assets/astro.css" />
 		<link
 			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,66 +16,40 @@
 			type="text/javascript"
 			src="Assets/jquery-2.1.4.min.js"
 		></script>
+
+		<script type="text/javascript" src="Assets/index.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-			<a class="navbar-brand" href="#">
-				<img
-					class="logo"
-					src="Assets/WhatsApp Image 2020-06-16 at 20.43.37.jpeg"
-				/>
-			</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNavDropdown"
-				aria-controls="navbarNavDropdown"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">
-							Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							Dropdown link
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-						>
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">
-								Something else here
-							</a>
-						</div>
-					</li>
-				</ul>
+		<div class="navbar">
+			<div class="logo">
+
 			</div>
-		</nav>
+			<div class="navbuttons">
+				<div class="navbutton">
+					HOME
+				</div>
+				<div class="navbutton">
+					ABOUT
+				</div>
+				<div class="navbutton">
+					BLOG
+				</div>
+				<div class="navbutton">
+					PROJECTS
+				</div>
+				<div class="navbutton">
+					TEAM
+				</div>
+			</div>
+			<div class="togglebutton">
+				<svg viewBox="0 0 100 100">
+  					<rect x="35" y="39.25" width="30" height="1.5" class="line" id="line1"></rect>
+  					<rect x="35" y="49.25" width="30" height="1.5" class="line" id="line2"></rect>
+  					<rect x="35" y="59.25" width="30" height="1.5" class="line" id="line3"></rect>
+				</svg>
+			</div>
+		</div>
 
 		<div class="video-background">
 			<video id="planetvid" autoplay playinline muted>
@@ -87,40 +60,38 @@
 		<button id="myBtn" class="bg" style="display: none;">
 			<!--For animation-->
 			<svg
-				width="195x"
-				height="90px"
-				viewBox="0 0 195 70"
+				width="175x"
+				height="50px"
+				viewBox="0 0 175 50"
 				class="border1"
 			>
 				<polyline
-					points="194,1 194,69 1,69 1,1 194,1"
+					points="174,1 174,49 1,49 1,1 174,1"
 					class="bg-line"
 				/>
 				<polyline
-					points="194,1 194,69 1,69 1,1 194,1"
+					points="174,1 174,49 1,49 1,1 174,1"
 					class="hl-line"
 				/>
 			</svg>
 			<svg
 				width="130px"
-				height="60px"
-				viewBox="0 0 130 60"
+				height="50px"
+				viewBox="0 0 130 50"
 				class="border2"
 			>
 				<polyline
-					points="129,1 129,59 1,59 1,1 129,1"
+					points="129,1 129,49 1,49 1,1 129,1"
 					class="bg-line"
 				/>
 				<polyline
-					points="129,1 129,59 1,59 1,1 129,1"
+					points="129,1 129,49 1,49 1,1 129,1"
 					class="hl-line"
 				/>
 			</svg>
 			<i class="fa"></i>
 			<div class="btntext">
-				<span>
-					Explore!
-				</span>
+				Explore!
 			</div>
 		</button>
 
