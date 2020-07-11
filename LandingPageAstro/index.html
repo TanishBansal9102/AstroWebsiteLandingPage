@@ -2,9 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
+		<meta
+			name="viewport"
+			content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height"
+		/>
 
 		<link rel="stylesheet" type="text/css" href="Assets/astro.css" />
+		<link rel="stylesheet" type="text/css" href="Assets/background.css" />
 		<link
 			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 			rel="stylesheet"
@@ -12,19 +16,17 @@
 			crossorigin="anonymous"
 		/>
 		<title>Document</title>
-		<script
-			type="text/javascript"
-			src="Assets/jquery-2.1.4.min.js"
-		></script>
+		<script type="text/javascript" src="Assets/jquery-2.1.4.min.js"></script>
 
 		<script type="text/javascript" src="Assets/index.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="navbar">
-			<div class="logo">
-
-			</div>
+			<div class="logo"></div>
 			<div class="navbuttons">
 				<div class="navbutton">
 					HOME
@@ -44,50 +46,473 @@
 			</div>
 			<div class="togglebutton">
 				<svg viewBox="0 0 100 100">
-  					<rect x="35" y="39.25" width="30" height="1.5" class="line" id="line1"></rect>
-  					<rect x="35" y="49.25" width="30" height="1.5" class="line" id="line2"></rect>
-  					<rect x="35" y="59.25" width="30" height="1.5" class="line" id="line3"></rect>
+					<rect
+						x="35"
+						y="39.25"
+						width="30"
+						height="1.5"
+						class="line"
+						id="line1"
+					></rect>
+					<rect
+						x="35"
+						y="49.25"
+						width="30"
+						height="1.5"
+						class="line"
+						id="line2"
+					></rect>
+					<rect
+						x="35"
+						y="59.25"
+						width="30"
+						height="1.5"
+						class="line"
+						id="line3"
+					></rect>
 				</svg>
 			</div>
 		</div>
 
-		<div class="video-background">
-			<video id="planetvid" autoplay playinline muted>
-				<source src="newvideo.mp4" type="video/mp4" />
-			</video>
+		<div class="back">
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
+			<div id="stars4"></div>
+			<div
+				class="geminid"
+				style="
+					--angle: 294;
+					--speed: 5;
+					--delay: 743;
+					--x: 27;
+					--y: 27;
+					--travel: 3;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 301;
+					--speed: 6;
+					--delay: 431;
+					--x: 33;
+					--y: 27;
+					--travel: 16;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 285;
+					--speed: 4;
+					--delay: 619;
+					--x: 31;
+					--y: 23;
+					--travel: 6;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 277;
+					--speed: 10;
+					--delay: 29;
+					--x: 35;
+					--y: 28;
+					--travel: 16;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 278;
+					--speed: 6;
+					--delay: 59;
+					--x: 41;
+					--y: 21;
+					--travel: 8;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 280;
+					--speed: 10;
+					--delay: 797;
+					--x: 32;
+					--y: 26;
+					--travel: 14;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 302;
+					--speed: 2;
+					--delay: 31;
+					--x: 55;
+					--y: 22;
+					--travel: 12;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 334;
+					--speed: 5;
+					--delay: 23;
+					--x: 23;
+					--y: 21;
+					--travel: 2;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 293;
+					--speed: 5;
+					--delay: 53;
+					--x: 33;
+					--y: 29;
+					--travel: 6;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 316;
+					--speed: 5;
+					--delay: 97;
+					--x: 79;
+					--y: 40;
+					--travel: 5;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 323;
+					--speed: 3;
+					--delay: 89;
+					--x: 81;
+					--y: 17;
+					--travel: 11;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 306;
+					--speed: 2;
+					--delay: 71;
+					--x: 32;
+					--y: 20;
+					--travel: 13;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 313;
+					--speed: 10;
+					--delay: 73;
+					--x: 45;
+					--y: 12;
+					--travel: 5;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 294;
+					--speed: 4;
+					--delay: 37;
+					--x: 52;
+					--y: 65;
+					--travel: 18;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 12;
+					--speed: 7;
+					--delay: 1283;
+					--x: 48;
+					--y: 83;
+					--travel: 13;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 310;
+					--speed: 20;
+					--delay: 830;
+					--x: 59;
+					--y: 32;
+					--travel: 1;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 320;
+					--speed: 10;
+					--delay: 89;
+					--x: 89;
+					--y: 23;
+					--travel: 3;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 317;
+					--speed: 20;
+					--delay: 101;
+					--x: 78;
+					--y: 51;
+					--travel: 6;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 319;
+					--speed: 4;
+					--delay: 139;
+					--x: 31;
+					--y: 63;
+					--travel: 13;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 304;
+					--speed: 4;
+					--delay: 149;
+					--x: 71;
+					--y: 35;
+					--travel: 15;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 316;
+					--speed: 8;
+					--delay: 211;
+					--x: 62;
+					--y: 45;
+					--travel: 15;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 339;
+					--speed: 8;
+					--delay: 311;
+					--x: 41;
+					--y: 66;
+					--travel: 7;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 289;
+					--speed: 8;
+					--delay: 179;
+					--x: 102;
+					--y: 22;
+					--travel: 4;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 282;
+					--speed: 20;
+					--delay: 131;
+					--x: 35;
+					--y: 59;
+					--travel: 9;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 346;
+					--speed: 10;
+					--delay: 401;
+					--x: 63;
+					--y: 33;
+					--travel: 23;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 321;
+					--speed: 5;
+					--delay: 457;
+					--x: 45;
+					--y: 21;
+					--travel: 23;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 20;
+					--speed: 9;
+					--delay: 569;
+					--x: 31;
+					--y: 31;
+					--travel: 20;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 328;
+					--speed: 15;
+					--delay: 977;
+					--x: 78;
+					--y: 21;
+					--travel: 11;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 310;
+					--speed: 10;
+					--delay: 769;
+					--x: 25;
+					--y: 14;
+					--travel: 8;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 331;
+					--speed: 7;
+					--delay: 1459;
+					--x: 43;
+					--y: 84;
+					--travel: 7;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div id="earthContainer">
+				<div id="earth"></div>
+			</div>
 		</div>
 
 		<button id="myBtn" class="bg" style="display: none;">
 			<!--For animation-->
-			<svg
-				width="175x"
-				height="50px"
-				viewBox="0 0 175 50"
-				class="border1"
-			>
-				<polyline
-					points="174,1 174,49 1,49 1,1 174,1"
-					class="bg-line"
-				/>
-				<polyline
-					points="174,1 174,49 1,49 1,1 174,1"
-					class="hl-line"
-				/>
+			<svg width="175x" height="50px" viewBox="0 0 175 50" class="border1">
+				<polyline points="174,1 174,49 1,49 1,1 174,1" class="bg-line" />
+				<polyline points="174,1 174,49 1,49 1,1 174,1" class="hl-line" />
 			</svg>
-			<svg
-				width="130px"
-				height="50px"
-				viewBox="0 0 130 50"
-				class="border2"
-			>
-				<polyline
-					points="129,1 129,49 1,49 1,1 129,1"
-					class="bg-line"
-				/>
-				<polyline
-					points="129,1 129,49 1,49 1,1 129,1"
-					class="hl-line"
-				/>
+			<svg width="130px" height="50px" viewBox="0 0 130 50" class="border2">
+				<polyline points="129,1 129,49 1,49 1,1 129,1" class="bg-line" />
+				<polyline points="129,1 129,49 1,49 1,1 129,1" class="hl-line" />
 			</svg>
 			<i class="fa"></i>
 			<div class="btntext">
@@ -111,8 +536,8 @@
 		</div>
 
 		<script>
-			$("#myBtn").delay(10000).fadeIn(1000);
-			$("#social").delay(10000).fadeIn(1000);
+			$('#myBtn').delay(10000).fadeIn(1000)
+			$('#social').delay(10000).fadeIn(1000)
 		</script>
 
 		<script
