@@ -1,6 +1,6 @@
 
 #myBtn {
-	z-index: 3;
+	z-index: 4;
 	position: absolute;
 	background-color: black;
 	border: 2px solid #ffffff;
@@ -85,7 +85,7 @@ li {
 
 /* Let's style the wrapper */
 .wrapper {
-	z-index: 3;
+	z-index: 4;
 	position: absolute;
 	bottom: 10em;
 	right: 0;
@@ -180,7 +180,7 @@ to align it properly */
 
 .navbar
 {
-	z-index: 3;
+	z-index: 4;
 	position: absolute;
 	top: 0px;
 	left: 0px;

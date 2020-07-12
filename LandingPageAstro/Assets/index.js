@@ -26,4 +26,17 @@ $(document).ready(function(){
 			$(".navbutton").css("transform", "translateX(0)");
 		}
 	});
+	var star = $('.star');
+	var earthcontainer = $('#earthContainer');
+	var earth = $('#earth');
+	var mask = $('#mask')
+
+	$(window).on('scroll', function() {
+		var st = $(this).scrollTop();
+
+		star.css({
+			'opacity' : 1 - st/700
+		});
+		
+	});
 });
