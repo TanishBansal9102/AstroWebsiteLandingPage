@@ -26,7 +26,7 @@ body {
 #mask {
   z-index: 3;
   position: relative;
-  width: 110%;
+  width: 210%;
   height: 120vw;
   margin: 65vh -5%;
   transform: perspective(0px) rotateX(40deg);
