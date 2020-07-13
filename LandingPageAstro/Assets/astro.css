@@ -1,9 +1,64 @@
+@font-face {
+	font-family: Railway;
+	src: url(fonts/Railway.otf);
+}
+#title-text{
+	z-index: 4;
+    display: table;
+    text-align: center;
+}
+#linea{
+    letter-spacing: 2.3vw;
+    color: #FFFFFF;
+    position: fixed;
+    display: table-cell;
+    top: 25.6vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    font: calc(1.36*(.8em + 1vw + 1vh))/calc(16*0.03022*(.8em + 1vw + 1vh)) "Railway", sans-serif;
+    padding-left: 9px;
+}
 
+#lineb{
+    color: #FFFFFF;
+    position: fixed;
+    display: table-cell;
+    top: 31.6vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    font: calc(115*0.03022*(.8em + 1vw + 1vh))/calc(29*0.03022*(.8em + 1vw + 1vh)) "Railway", sans-serif;
+}
+#linec{
+	z-index: 1;
+    position: fixed;
+    display: table-cell;
+    top: 39.6vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    font: calc(0.59*(.8em + 1vw + 1vh))/calc(96*0.03022*(.8em + 1vw + 1vh)) "Railway", sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 1.16vw;
+}
 #myBtn {
 	z-index: 4;
 	position: absolute;
-	background-color: black;
-	border: 2px solid #ffffff;
+	
+	width: 239px;
+	height: 75px;
+	background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
+	border: 1px solid #27D3FF;
+	border-radius: 38px;
+	background-size:439px 200px;
+	background-position: -100px;
+
+	
 	color: #ffffff;
 	cursor: pointer;
 	letter-spacing: 0.5px;
@@ -11,8 +66,7 @@
 	text-align: center;
 	text-decoration: none;
 	display: block;
-	height: 50px;
-	width: 175px;
+	
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -27,7 +81,7 @@
 
 #myBtn:hover {
 	transition: 1s ease-in-out;
-	background: #000000;
+	background-position:-200px; 
 	border: 2px solid #ffffff;
 }
 

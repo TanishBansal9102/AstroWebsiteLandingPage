@@ -29,7 +29,11 @@ $(document).ready(function(){
 	var star = $('.star');
 	var earthcontainer = $('#earthContainer');
 	var earth = $('#earth');
-	var mask = $('#mask')
+	var mask = $('#mask');
+	var titleText = $('#title-text');
+	var linea = $('#linea');
+	var lineb = $('#lineb');
+	var linec = $('#linec');
 
 	$(window).on('scroll', function() {
 		var st = $(this).scrollTop();
@@ -37,6 +41,14 @@ $(document).ready(function(){
 		star.css({
 			'opacity' : 1 - st/700
 		});
-		
+		linea.css({
+			'opacity' : 1 - st/700
+		})
+		lineb.css({
+			'opacity' : 1 - st/700
+		})
+		linec.css({
+			'opacity' : 1 - st/1500
+		})
 	});
 });
