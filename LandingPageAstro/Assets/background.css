@@ -94,6 +94,21 @@ body {
     margin: 33vh -5%;
   }
 }
+@media (max-width: 75.2vh) {
+  #earth {
+      margin-top: 45vh;
+      height: 107vh;
+      width: 105vh;
+      -webkit-box-shadow: inset -80vh 0 1030px -50px black;
+      box-shadow: inset -80vh 0 1030px -50px black;
+      -moz-box-shadow: inset -80vh 0 1030px -50px black;
+      animation: rotateMin 120s linear infinite;
+      -webkit-animation: rotateMin 120s linear infinite;
+      -moz-animation: rotateMin 120s linear infinite;
+      -ms-animation: rotateMin 120s linear infinite;
+      -o-animation: rotateMin 120s linear infinite;
+  }
+}
 
 #earth:before {
   /* [1] Again, break the flow to show this as an overlay */
