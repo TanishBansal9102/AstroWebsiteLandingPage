@@ -96,17 +96,17 @@ body {
 }
 @media (max-width: 75.2vh) {
   #earth {
-      margin-top: 45vh;
-      height: 107vh;
-      width: 105vh;
+      margin-top: 42vh;
+      height: 104vh;
+      width: 102vh;
       -webkit-box-shadow: inset -80vh 0 1030px -50px black;
       box-shadow: inset -80vh 0 1030px -50px black;
       -moz-box-shadow: inset -80vh 0 1030px -50px black;
-      animation: rotateMin 120s linear infinite;
-      -webkit-animation: rotateMin 120s linear infinite;
-      -moz-animation: rotateMin 120s linear infinite;
-      -ms-animation: rotateMin 120s linear infinite;
-      -o-animation: rotateMin 120s linear infinite;
+      animation: rotateMini 120s linear infinite;
+      -webkit-animation: rotateMini 120s linear infinite;
+      -moz-animation: rotateMini 120s linear infinite;
+      -ms-animation: rotateMini 120s linear infinite;
+      -o-animation: rotateMini 120s linear infinite;
   }
 }
 
@@ -143,6 +143,14 @@ body {
   }
   100% {
     background-position: 210vh 0;
+  }
+}
+@keyframes rotateMini {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 204vh 0;
   }
 }
 /* set the default transition time */
