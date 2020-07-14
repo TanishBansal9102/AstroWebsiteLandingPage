@@ -17,7 +17,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-position-y: 0;
   z-index: -30;
 }
 .back{
@@ -47,7 +46,7 @@ body {
   /* [2] Set-up the dimensions and spacing */
   width: 78vw;
   height: 78vw;
-  margin-top: 36.3vw;
+  margin-top: 50.3vw;
   left: -9999px;
   right: -9999px;
   margin-left: auto;
@@ -78,7 +77,7 @@ body {
 
 @media (max-width: 135.2vh) {
   #earth {
-      margin-top: 49.3vh;
+      margin-top: 47.3vh;
       height: 107vh;
       width: 105vh;
       -webkit-box-shadow: inset -80vh 0 1030px -50px black;
@@ -131,14 +130,7 @@ body {
     background-position: 210vh 0;
   }
 }
-@keyframes rotateMini {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 204vh 0;
-  }
-}
+
 /* set the default transition time */
 :root {
   --duration1: 0.2s;
