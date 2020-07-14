@@ -47,8 +47,8 @@
     letter-spacing: 1.16vw;
 }
 #myBtn {
-	z-index: 4;
-	position: absolute;
+	z-index: 2;
+	position: fixed;
 	
 	width: 239px;
 	height: 75px;
