@@ -13,7 +13,7 @@ html {
 body {
   height: 100%;
   background-color: #000;
-  background-image: url("./BG2.png");
+  background-image: url("./BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -57,7 +57,7 @@ body {
   /* [4] Tweak the appearance, and give it a nice background i.e. the world map */
   color: #000;
   border-radius: 50%;
-  background: #000 url(./earthmap.jpg) 0 0 repeat;
+  background: #000 url(./maptransparent.png) 0 0 repeat;
   background-size: cover;
   transform: rotate(90deg);
   -webkit-animation: rotate 120s linear infinite;
@@ -74,21 +74,96 @@ body {
   /* [5] Position things in a 3d space */
   transform-style: preserve-3d;
 }
+#earthglowa {
+  
+  z-index: 1;
+  position: absolute;
+  /* display: block; */
+  width: 72vw;
+  height: 72vw;
+  margin-top: 49vh;
+  left: -9999px;
+  right: -9999px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 50%;
+  -webkit-box-shadow: -88vh 0 1030px -50px black;
+  box-shadow: 1vh -24px 20px -3px #26e7e3c4, -1vh -24px 20px -3px #0188d6b8, inset 0vh -20px 20px 20px #45e2fcad, inset 0vh 20px 20px 20px #45e2fcbf, -1vh -9px 20px 20px #12abf391, 1vh -9px 20px 20px #23e4e27a;
+
+}
+#earthglowb {
+  
+  z-index: 1;
+  position: absolute;
+  /* display: block; */
+  width: 18vw;
+  height: 17vw;
+  margin-top: 48vh;
+  left: -9999px;
+  right: -9999px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 50%;
+  -webkit-box-shadow: -88vh 0 1030px -50px black;
+  box-shadow: 0vh -20px 20px 0px #9ff9fce8, inset 0vh -20px 20px 20px #92f1f6c9, inset 0vh 20px 20px 20px #ffffffbf, -3vh 2px 20px 7px #5eeefcb0, 3vh 2px 20px 7px #23e4e2bf;
+}
 
 @media (max-width: 135.2vh) {
   #earth {
-      margin-top: 47.3vh;
-      height: 107vh;
-      width: 105vh;
-      -webkit-box-shadow: inset -80vh 0 1030px -50px black;
-      box-shadow: inset -80vh 0 1030px -50px black;
-      -moz-box-shadow: inset -80vh 0 1030px -50px black;
-      animation: rotateMin 120s linear infinite;
-      -webkit-animation: rotateMin 120s linear infinite;
+      
+    margin-top: 47.3vh;
+    height: 107vh;
+    width: 105vh;
+    /* -webkit-box-shadow: inset -80vh 0 1030px -50px black; */
+    box-shadow: inset -80vh 0 1030px -50px #040b14;
+    -moz-box-shadow: inset -80vh 0 1030px -50px black;
+    animation: rotateMin 120s linear infinite;
+    -webkit-animation: rotateMin 120s linear infinite;
       -moz-animation: rotateMin 120s linear infinite;
       -ms-animation: rotateMin 120s linear infinite;
       -o-animation: rotateMin 120s linear infinite;
   }
+  
+#earthglowa {
+  
+  z-index: 1;
+  position: absolute;
+  /* display: block; */
+  width: 100vh;
+  height: 100vh;
+  margin-top: 46.5vh;
+  left: -9999px;
+  right: -9999px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: -88vh 0 1030px -50px black;
+  box-shadow: 1vh -24px 20px -3px #26e7e3c4, -1vh -24px 20px -3px #0188d6b8, inset 0vh -20px 20px 20px #45e2fcad, inset 0vh 20px 20px 20px #45e2fcbf, -1vh -9px 20px 20px #12abf391, 1vh -9px 20px 20px #23e4e27a;
+
+}
+#earthglowb {
+  
+  z-index: 1;
+  position: absolute;
+  /* display: block; */
+  width: 24vh;
+  height: 22vh;
+  margin-top: 45.5vh;
+  left: -9999px;
+  right: -9999px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 50%;
+  -webkit-box-shadow: -88vh 0 1030px -50px black;
+  box-shadow: 0vh -20px 20px 0px #9ff9fce8, inset 0vh -20px 20px 20px #92f1f6c9, inset 0vh 20px 20px 20px #ffffffbf, -3vh 2px 20px 7px #5eeefcb0, 3vh 2px 20px 7px #23e4e2bf;
+}
   #mask{
     height: 429vh;
     margin: 33vh -5%;
@@ -97,20 +172,16 @@ body {
 
 #earth:before {
   /* [1] Again, break the flow to show this as an overlay */
+  
   position: absolute;
   top: 0;
   left: 0;
-  /* [2] Again, give it all the available space */
   width: 100%;
   height: 100%;
-  /* [3] Duh. */
   content: '';
-  /* [4] Add some shape and overlay effect to it */
   opacity: 0.4;
   border-radius: 50%;
-  background: radial-gradient(circle at 2vw 56vw, #0087a4, #001e2b);
-  -webkit-box-shadow: 18px 0vw 234px 0vw black inset;
-  box-shadow: 18px 0vw 234px 0vw black inset;
+  background: linear-gradient(90deg, #00bcdccc 10%, #001017c9 56%),linear-gradient(#00aac2cf, #0079c5d6);
 }
 
 
@@ -119,7 +190,7 @@ body {
     background-position: 0 0;
   }
   100% {
-    background-position: 156vw 0;
+    background-position: 131.04vw 0;
   }
 }
 @keyframes rotateMin {
@@ -127,7 +198,7 @@ body {
     background-position: 0 0;
   }
   100% {
-    background-position: 210vh 0;
+    background-position: 176.4vh 0;
   }
 }
 
