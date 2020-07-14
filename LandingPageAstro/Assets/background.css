@@ -96,7 +96,6 @@ body {
   }
 }
 
-
 #earth:before {
   /* [1] Again, break the flow to show this as an overlay */
   position: absolute;
