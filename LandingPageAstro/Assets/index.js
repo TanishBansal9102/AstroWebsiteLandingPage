@@ -38,7 +38,6 @@ $(document).ready(function(){
 
 	$(window).on('scroll', function() {
 		var st = $(this).scrollTop();
-
 		star.css({
 			'opacity' : 1 - st/700
 		});
