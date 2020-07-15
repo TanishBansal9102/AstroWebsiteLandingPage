@@ -57,7 +57,7 @@ body {
   /* [4] Tweak the appearance, and give it a nice background i.e. the world map */
   color: #000;
   border-radius: 50%;
-  background: #000 url(./maptransparent.png) 0 0 repeat;
+  background: url(./maptransparent.png) 0 0 repeat;
   background-size: cover;
   transform: rotate(90deg);
   -webkit-animation: rotate 120s linear infinite;
@@ -68,9 +68,6 @@ body {
   -webkit-transform-style: preserve-3d;
   -moz-transition: -moz-transform 200ms linear;
   -moz-transform-style: preserve-3d;
-  -webkit-box-shadow: inset -88vh 0 1030px -50px black;
-  box-shadow: inset -88vh 0 1030px -50px black;
-  -moz-box-shadow: inset -88vh 0 1030px -50px black;
   /* [5] Position things in a 3d space */
   transform-style: preserve-3d;
 }
@@ -116,11 +113,8 @@ body {
   #earth {
       
     margin-top: 47.3vh;
-    height: 107vh;
+    height: 105vh;
     width: 105vh;
-    /* -webkit-box-shadow: inset -80vh 0 1030px -50px black; */
-    box-shadow: inset -80vh 0 1030px -50px #040b14;
-    -moz-box-shadow: inset -80vh 0 1030px -50px black;
     animation: rotateMin 120s linear infinite;
     -webkit-animation: rotateMin 120s linear infinite;
       -moz-animation: rotateMin 120s linear infinite;
@@ -166,22 +160,24 @@ body {
 }
   #mask{
     height: 429vh;
-    margin: 33vh -5%;
+    margin: 18vh -5%;
   }
 }
 
 #earth:before {
   /* [1] Again, break the flow to show this as an overlay */
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  opacity: 0.4;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #00bcdccc 10%, #001017c9 56%),linear-gradient(#00aac2cf, #0079c5d6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 1;
+    border-radius: 50%;
+    background: url(./sphereedit.png);
+    mix-blend-mode: color;
+    background-size: cover;
+    transform: rotate(-90deg);
 }
 
 
