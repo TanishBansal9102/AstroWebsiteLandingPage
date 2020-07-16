@@ -235,7 +235,7 @@ to align it properly */
 .navbar
 {
 	z-index: 4;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 

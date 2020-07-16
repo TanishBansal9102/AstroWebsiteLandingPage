@@ -27,7 +27,7 @@ body {
   z-index: 3;
   position: relative;
   width: 210%;
-  height: 120vw;
+  height: 130vw;
   margin: 65vh -5%;
   transform: perspective(0px) rotateX(40deg);
   background: linear-gradient(to top, rgba(0,0,0,0) 30%,rgba(0,0,0,1) 41%,  rgba(0,0,0,1) 86%, rgba(0,0,0,1) 87%, rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0) 100%)

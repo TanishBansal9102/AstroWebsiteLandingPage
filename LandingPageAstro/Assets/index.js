@@ -35,6 +35,7 @@ $(document).ready(function(){
 	var lineb = $('#lineb');
 	var linec = $('#linec');
 	var explore = $('#myBtn');
+	var navbar = $('.navbar');
 
 	$(window).on('scroll', function() {
 		var st = $(this).scrollTop();
@@ -51,5 +52,8 @@ $(document).ready(function(){
 			'opacity' : 1 - st/1200
 		})
 		explore.css({'opacity': 1-st/300})
+		navbar.css({
+			'opacity' : 1 - st/700
+		})
 	});
 });
