@@ -8,20 +8,20 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #fff;
+	background-color: #000;
 	z-index: 999;
    height: 100%;
 }
 #status  {
-	width: 200px;
-	height: 200px;
+	width: 50vw;
+	height: 50vw;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	background-image: url(http://opengraphicdesign.com/wp-content/uploads/2009/01/loader64.gif);
+	background-image: url(blackhole.gif);
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: -100px 0 0 -100px;
+	margin: -25vw 0 0 -25vw;
 }
 #title-text{
 	z-index: 4;

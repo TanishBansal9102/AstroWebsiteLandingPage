@@ -71,6 +71,7 @@ body {
   /* [5] Position things in a 3d space */
   transform-style: preserve-3d;
 }
+
 #earthglowa {
   
   z-index: 1;
