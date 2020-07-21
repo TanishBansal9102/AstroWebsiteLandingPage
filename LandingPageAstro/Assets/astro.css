@@ -13,15 +13,15 @@
    height: 100%;
 }
 #status  {
-	width: 50vw;
-	height: 50vw;
+	width: 100%;
+	height: 40vh;
 	position: absolute;
-	left: 50%;
 	top: 50%;
 	background-image: url(blackhole.gif);
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: -25vw 0 0 -25vw;
+	margin: -20vh 0 0 0;
 }
 #title-text{
 	z-index: 4;
