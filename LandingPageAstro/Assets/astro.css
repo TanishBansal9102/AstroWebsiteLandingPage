@@ -67,7 +67,7 @@
     color: #FFFFFF;
     letter-spacing: 1.16vw;
 }
-#myBtn {
+.myBtn {
 	z-index: 2;
 	position: fixed;
 	
@@ -100,7 +100,7 @@
 	bottom: 0;
 }
 
-#myBtn:hover {
+.myBtn:hover {
 	transition: 0.4s ease-in-out;
 	background-position:-200px; 
 	border: 2px solid #ffffff;
@@ -121,7 +121,7 @@ svg {
 	display: none;
 }
 
-#myBtn:hover svg {
+.myBtn:hover svg {
 	stroke-dashoffset: -480;
 }
 
@@ -227,11 +227,11 @@ to align it properly */
 	.border1 {
 		display: none;
 	}
-	#myBtn {
+	.myBtn {
 		height: 50px;
 		width: 130px;
 	}
-	#myBtn .btntext {
+	.myBtn .btntext {
 		color: white;
 		font-size: 1.5em;
 		font-weight: 100;
