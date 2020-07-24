@@ -36,7 +36,7 @@ $(document).ready(function(){
 	var linea = $('#linea');
 	var lineb = $('#lineb');
 	var linec = $('#linec');
-	var explore = $('.myBtn');
+	var explore = $('#explore');
 	var navbar = $('.navbar');
 
 	$(window).on('scroll', function() {

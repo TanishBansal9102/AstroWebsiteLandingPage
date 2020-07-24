@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: Railway;
 	src: url(fonts/Railway.otf);
@@ -12,6 +13,7 @@
 	z-index: 999;
    height: 100%;
 }
+
 #status  {
 	width: 100%;
 	height: 40vh;
@@ -68,7 +70,7 @@
     letter-spacing: 1.16vw;
 }
 .myBtn {
-	z-index: 2;
+	z-index: 3;
 	position: fixed;
 	
 	width: 239px;
@@ -160,7 +162,7 @@ li {
 
 /* Let's style the wrapper */
 .wrapper {
-	z-index: 4;
+	z-index: 6;
 	position: absolute;
 	bottom: 10em;
 	right: 0;
@@ -355,5 +357,190 @@ to align it properly */
 		padding: calc((34/768) * ((100vw + 100vh) / 2)) 0px;
 
 		text-align: center
+	}
+}
+
+@media (min-width: 501px){
+	.section-2{
+		position: absolute;
+		width: 100%;
+		top: 107vh;
+		z-index: 5;
+		margin: 0;
+		padding: 0;
+		background: transparent linear-gradient(180deg, #000000 0%, #191919 100%) 0% 0% no-repeat padding-box;
+		overflow-y: hidden;
+		height: 43.8vh;
+	}
+	
+	.image-container-1{
+		display: inline-block;
+		width: 46%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.image-container-1 img{
+		display: block;
+		width: 100%;
+		height: auto;
+		mix-blend-mode: lighten;
+	}
+
+	.text-container{
+		position: absolute;
+		margin: 3vh auto;
+		display: inline-block;
+		width: 45%;
+		height: auto;
+	}
+
+	.section-2 .text{
+		display: inline;
+		font-family: sans-serif;
+		font-size: 3vw;
+		font-weight: 100;
+		color: #FFFFFF;
+	}
+
+	.section-2 p{
+		color: #8B9AB5;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.5vw;
+		padding-left: 0.9rem;
+		margin-top: 7vh;
+		margin-bottom: 7vh;
+		line-height: 1.75vw;
+	}
+
+	.circle{
+		height: 30px; 
+		width: 60px; 
+		border-radius: 30px 30px 0 0;
+		transform: rotate(90deg);
+		background-image: linear-gradient(-90deg, #48DBD8E8, #0287D0E6);
+		display: inline-block;
+	}
+
+	.myBtn2{
+		
+		width: 200px;
+		height: 50px;
+		margin-left: 1vw;
+		margin-bottom: 5em; /*change this to specify distance from bottom*/
+		bottom: 0;
+		left: unset;
+    	right: unset;
+    	position: unset;
+		
+}
+
+}
+
+@media only screen and (max-width: 501px){
+	.section-2{
+		margin: 0;
+		padding: 0;
+		background-image: linear-gradient(#000000 50%, #191919);
+	}
+	
+	.image-container-1{
+		display: inline-block;
+		width: 46%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.image-container-1 img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.text-container{
+		position: absolute;
+		margin: 0 auto;
+		display: inline-block;
+		width: 45%;
+		height: auto;
+	}
+
+	.section-2 .text{
+		display: inline;
+		font-family: sans-serif;
+		font-size: 14px;
+		font-weight: 100;
+		color: #FFFFFF;
+		padding-left: 5px;
+	}
+
+	.section-2 p{
+		color: #8B9AB5;
+		font-family: 'Lato', sans-serif;
+		font-size: 10px;
+		padding-left: 5px;
+	}
+
+	.circle{
+		height: 10px; 
+		width: 20px; 
+		border-radius: 10px 10px 0 0;
+		transform: rotate(90deg);
+		background-image: linear-gradient(-90deg, #48DBD8E8, #0287D0E6);
+		display: inline-block;
+	}
+}
+
+@media (min-width: 501px){
+	.section-3{
+		z-index: 5;
+		color: white;
+		position: absolute;
+		width: 100%;
+		top:150.9vh;
+		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
+		opacity: 1;
+	}
+
+	.section-3 img{
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		z-index: -10;
+		mix-blend-mode: hue;
+	}
+
+	.section-3 h1{
+		position: absolute;
+		top: 5vh;
+    	left: 9vw;
+		display: inline-block;
+		font-family: sans-serif;
+		font-size: 3rem;
+		font-weight: 100;
+		margin-left: 10px;
+	}
+
+	.section-3 .circle{
+		position: absolute;
+		top: 10vh;
+		left: 4vw;
+		display: inline-block;
+	}
+
+	.section-3 p{
+		position: absolute;
+		top: 14vh;
+		left: 4vw;
+		width: 47vw;
+		height: auto;
+		margin-left: 1vw;
+		color: #8B9AB5;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.25rem;
+		margin-top: 5vh;
+		line-height: 1.75rem;
 	}
 }
