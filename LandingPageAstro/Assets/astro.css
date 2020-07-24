@@ -1,3 +1,6 @@
+html, body{
+	margin: 0 auto;
+}
 
 @font-face {
 	font-family: Railway;
@@ -13,7 +16,6 @@
 	z-index: 999;
    height: 100%;
 }
-
 #status  {
 	width: 100%;
 	height: 40vh;
@@ -69,8 +71,8 @@
     color: #FFFFFF;
     letter-spacing: 1.16vw;
 }
-.myBtn {
-	z-index: 3;
+#myBtn {
+	z-index: 2;
 	position: fixed;
 	
 	width: 239px;
@@ -102,7 +104,7 @@
 	bottom: 0;
 }
 
-.myBtn:hover {
+#myBtn:hover {
 	transition: 0.4s ease-in-out;
 	background-position:-200px; 
 	border: 2px solid #ffffff;
@@ -123,7 +125,7 @@ svg {
 	display: none;
 }
 
-.myBtn:hover svg {
+#myBtn:hover svg {
 	stroke-dashoffset: -480;
 }
 
@@ -162,7 +164,7 @@ li {
 
 /* Let's style the wrapper */
 .wrapper {
-	z-index: 6;
+	z-index: 4;
 	position: absolute;
 	bottom: 10em;
 	right: 0;
@@ -229,11 +231,11 @@ to align it properly */
 	.border1 {
 		display: none;
 	}
-	.myBtn {
+	#myBtn {
 		height: 50px;
 		width: 130px;
 	}
-	.myBtn .btntext {
+	#myBtn .btntext {
 		color: white;
 		font-size: 1.5em;
 		font-weight: 100;
@@ -364,13 +366,12 @@ to align it properly */
 	.section-2{
 		position: absolute;
 		width: 100%;
-		top: 107vh;
-		z-index: 5;
+		top: 122vh;
+		z-index: 100;
 		margin: 0;
 		padding: 0;
+		height: 69vh;
 		background: transparent linear-gradient(180deg, #000000 0%, #191919 100%) 0% 0% no-repeat padding-box;
-		overflow-y: hidden;
-		height: 43.8vh;
 	}
 	
 	.image-container-1{
@@ -424,25 +425,101 @@ to align it properly */
 	}
 
 	.myBtn2{
-		
-		width: 200px;
-		height: 50px;
+		z-index: 2;
+		width: 14.641288433382138vw;
+		padding:9px;
+		height: auto;
+		background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
+		border: 1px solid #27D3FF;
+		border-radius: 38px;
+		background-size:66.92073170731707vw 31.695721077654518vh;
+		background-position: -100px;
+		color: #ffffff;
+		cursor: pointer;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		display: block;
 		margin-left: 1vw;
-		margin-bottom: 5em; /*change this to specify distance from bottom*/
+		margin-right: 0;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		transition: all 0.2s linear;
+		align-items: center;
+		margin-bottom: 0; /*change this to specify distance from bottom*/
 		bottom: 0;
-		left: unset;
-    	right: unset;
-    	position: unset;
+		display: inline-block;
 		
+}
+
+.myBtn2:hover {
+	transition: 0.4s ease-in-out;
+	background-position:-200px; 
+	border: 2px solid #ffffff;
+}
+
+svg {
+	display: block;
+	position: absolute;
+	left: -3px;
+	top: -2px;
+	fill: none;
+	stroke: #1984ff;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+}
+.border2 {
+	display: none;
+}
+
+.myBtn2:hover svg {
+	stroke-dashoffset: -480;
+}
+
+.btntext {
+	display: inline-block;
+	vertical-align: bottom;
+	color: white;
+	font-size: 1.581259150805271vw;
+	font-weight: 200;
+}
+
+.text-container .btn2{
+	background: none;
+	border: 2px solid #707070;
+	margin-right: 0;
+	display: inline-block
+}
+
+.text-container .myBtn2:hover {
+	transition: 0.4s ease-in-out;
+	background-position:-200px; 
+	border: 2px solid #ffffff;
+}
+
+.btn2 .btntext{
+	color: #707070;
+}
+
+.btn2 .btntext:hover{
+	transition: 0.4s ease-in-out;
+	color: white;
 }
 
 }
 
 @media only screen and (max-width: 501px){
 	.section-2{
+		position: absolute;
+		width: 100%;
+		top: 100vh;
+		z-index: 100;
 		margin: 0;
 		padding: 0;
-		background-image: linear-gradient(#000000 50%, #191919);
+		height: 150px;
+		background: transparent linear-gradient(180deg, #000000 0%, #191919 100%) 0% 0% no-repeat padding-box;
 	}
 	
 	.image-container-1{
@@ -457,11 +534,12 @@ to align it properly */
 		display: block;
 		width: 100%;
 		height: auto;
+		mix-blend-mode: lighten;
 	}
 
 	.text-container{
 		position: absolute;
-		margin: 0 auto;
+		margin: 3vh auto;
 		display: inline-block;
 		width: 45%;
 		height: auto;
@@ -470,17 +548,20 @@ to align it properly */
 	.section-2 .text{
 		display: inline;
 		font-family: sans-serif;
-		font-size: 14px;
+		font-size: 0.8rem;
 		font-weight: 100;
 		color: #FFFFFF;
-		padding-left: 5px;
 	}
 
 	.section-2 p{
 		color: #8B9AB5;
 		font-family: 'Lato', sans-serif;
-		font-size: 10px;
-		padding-left: 5px;
+		font-size: 8px;
+		padding-left: 0.3rem;
+		margin-top: 10px;
+		margin-right: 0;
+		padding-right: 0;
+		line-height: 10px;
 	}
 
 	.circle{
@@ -491,34 +572,195 @@ to align it properly */
 		background-image: linear-gradient(-90deg, #48DBD8E8, #0287D0E6);
 		display: inline-block;
 	}
+
+	.myBtn2{
+		z-index: 2;
+		width: 65px;
+		padding:0;
+		height: 25px;
+		background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
+		border: 1px solid #27D3FF;
+		border-radius: 38px;
+		background-size:66.92073170731707vw 31.695721077654518vh;
+		background-position: -100px;
+		color: #ffffff;
+		cursor: pointer;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		margin-left: 1vw;
+		margin-right: 0;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		transition: all 0.2s linear;
+		align-items: center;
+		margin-bottom: 0; /*change this to specify distance from bottom*/
+		bottom: 0;
+		display: inline-block;
+		
+}
+
+.myBtn2:hover {
+	transition: 0.4s ease-in-out;
+	background-position:-200px; 
+	border: 2px solid #ffffff;
+}
+
+svg {
+	display: block;
+	position: absolute;
+	left: -3px;
+	top: 0;
+	fill: none;
+	stroke: #1984ff;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+}
+.border2 {
+	display: inline;
+}
+
+.border1{
+	display: none;
+}
+
+.myBtn2:hover svg {
+	stroke-dashoffset: -480;
+}
+
+.btntext {
+	display: inline-block;
+	vertical-align: bottom;
+	color: white;
+	font-size: 8px;
+	font-weight: 100;
+}
+
+.text-container .btn2{
+	background: none;
+	border: 2px solid #707070;
+	margin:0;
+	display: inline-block;
+	height: 25px;
+	width: 65px;
+}
+
+.text-container .myBtn2:hover {
+	transition: 0.4s ease-in-out;
+	background-position:-200px; 
+	border: 2px solid #ffffff;
+}
+
+.btn2 .btntext{
+	color: #707070;
+}
+
+.btn2 .btntext:hover{
+	transition: 0.4s ease-in-out;
+	color: white;
+}
+
 }
 
 @media (min-width: 501px){
 	.section-3{
-		z-index: 5;
+		z-index: 100;
 		color: white;
 		position: absolute;
 		width: 100%;
-		top:150.9vh;
+		height: 120vh;
+		top:190vh;
 		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
 		opacity: 1;
 	}
 
 	.section-3 img{
 		display: block;
-		max-width: 100%;
-		max-height: 100%;
+		height: 120vh;
 		z-index: -10;
 		mix-blend-mode: hue;
 	}
 
 	.section-3 h1{
+		align-items: center;
 		position: absolute;
-		top: 5vh;
-    	left: 9vw;
+		top: 3.5vh;
+    left: 9vw;
 		display: inline-block;
 		font-family: sans-serif;
 		font-size: 3rem;
+		font-weight: 100;
+		margin-left: 10px;
+
+
+	}
+
+	.section-3 .circle{
+		position: absolute;
+		top: 10vh;
+		left: 4vw;
+		display: inline-block;
+	}
+
+	.section-3 p{
+		position: absolute;
+		top: 17vh;
+		left: 4vw;
+		width: 70vw;
+		margin-left: 1vw;
+		color: #8B9AB5;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.25rem;
+		margin-top: 5vh;
+		line-height: 1.75rem;
+	}
+
+	.section-3 .btn2{
+		position: absolute;
+		background: none;
+		border: 2px solid #707070;
+		bottom: 60vh;
+		height: 8vh;
+		left: 4vw;
+		margin-top: 10px;
+	}
+
+	.section-3 .btn2:hover{
+		border-color: #FFFFFF;
+		transition: 0.4s ease-in-out;
+}
+}
+
+
+@media (max-width: 501px){
+	.section-3{
+		z-index: 100;
+		color: white;
+		position: absolute;
+		height: 120px;
+		top:125vh;
+		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
+		opacity: 1;
+	}
+
+	.section-3 img{
+		display: block;
+		height: 250px;
+		z-index: -10;
+		mix-blend-mode: hue;
+	}
+
+	.section-3 h1{
+		align-items: center;
+		position: absolute;
+		top: 47px;
+    left: 30px;
+		display: inline-block;
+		font-family: sans-serif;
+		font-size: 0.8rem;
 		font-weight: 100;
 		margin-left: 10px;
 	}
@@ -532,15 +774,30 @@ to align it properly */
 
 	.section-3 p{
 		position: absolute;
-		top: 14vh;
+		top: 17vh;
 		left: 4vw;
-		width: 47vw;
-		height: auto;
+		width: 70vw;
 		margin-left: 1vw;
 		color: #8B9AB5;
 		font-family: 'Lato', sans-serif;
-		font-size: 1.25rem;
-		margin-top: 5vh;
-		line-height: 1.75rem;
+		font-size: 8px;
+		margin-top: -12.5px;
+		line-height: 10px;
 	}
+
+	.section-3 .btn2{
+		position: absolute;
+		background: none;
+		border: 2px solid #707070;
+		top: 135px;
+		height: 25px;
+		left: 4vw;
+		height: 25px;
+		width: 65px;
+	}
+
+	.section-3 .btn2:hover{
+		border-color: #FFFFFF;
+		transition: 0.4s ease-in-out;
+}
 }
