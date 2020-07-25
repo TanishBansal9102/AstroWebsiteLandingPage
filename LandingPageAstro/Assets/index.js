@@ -102,4 +102,7 @@ $(window).on('load', function () {
 	//fadeOut(document.getElementById('preloader'),300);
 	jQuery("#status").fadeOut();
 	jQuery("#preloader").delay(1000).fadeOut("slow");
+	$('html').css({
+		'overflow-y': 'auto',
+	  });
 });
