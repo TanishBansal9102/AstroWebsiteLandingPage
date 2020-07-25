@@ -276,11 +276,11 @@ to align it properly */
 	left: 0px;
 
 	height: calc((40/768) * ((100vw + 100vh) / 2));
-	width: calc((100/768) * ((100vw + 100vh) / 2));
+	width: calc((110/768) * ((100vw + 100vh) / 2));
 
 	margin: calc((20/768) * ((100vw + 100vh) / 2));
 
-	background-image: url('logo.jpg');
+	background-image: url('logo-transparent.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
