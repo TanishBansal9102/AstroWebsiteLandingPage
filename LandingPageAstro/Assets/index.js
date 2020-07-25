@@ -38,6 +38,14 @@ $(document).ready(function(){
 	var linec = $('#linec');
 	var explore = $('#explore');
 	var navbar = $('.navbar');
+	var rectangle1 = $('#rectangle1');
+	var rectangle2 = $('#rectangle2');
+	var rectangle3 = $('#rectangle3');
+	var rectangle4 = $('#rectangle4');
+	var rectangle5 = $('#rectangle5');
+	var rectangle6 = $('#rectangle6');
+	var section2 = $('.section-2');
+	var section3 = $('.section-3');
 
 	$(window).on('scroll', function() {
 		var st = $(this).scrollTop();
@@ -57,6 +65,30 @@ $(document).ready(function(){
 		navbar.css({
 			'opacity' : 1 - st/700
 		})
+		if(st<section2.position().top-100){
+			rectangle2.removeClass('rectanglebig', {duration:500});
+			rectangle3.removeClass('rectanglebig', {duration:500});
+			rectangle4.removeClass('rectanglebig', {duration:500});
+			rectangle5.removeClass('rectanglebig', {duration:500});
+			rectangle6.removeClass('rectanglebig', {duration:500});
+			rectangle1.addClass('rectanglebig', {duration:500});
+		}
+		if(st>section2.position().top-100){
+		rectangle1.removeClass('rectanglebig', {duration:500});
+		rectangle3.removeClass('rectanglebig', {duration:500});
+		rectangle4.removeClass('rectanglebig', {duration:500});
+		rectangle5.removeClass('rectanglebig', {duration:500});
+		rectangle6.removeClass('rectanglebig', {duration:500});
+		rectangle2.addClass('rectanglebig', {duration:500});
+	}
+		if(st>section3.position().top-100){
+			rectangle1.removeClass('rectanglebig', {duration:500});
+			rectangle2.removeClass('rectanglebig', {duration:500});
+			rectangle4.removeClass('rectanglebig', {duration:500});
+			rectangle5.removeClass('rectanglebig', {duration:500});
+			rectangle6.removeClass('rectanglebig', {duration:500});
+			rectangle1.removeClass('rectanglebig', {duration:500});
+			rectangle3.addClass('rectanglebig', {duration:500});}
 	});
 });
 

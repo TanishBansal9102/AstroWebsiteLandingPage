@@ -3,6 +3,7 @@ html {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 html {
   height: 100%;
@@ -24,6 +25,7 @@ body {
 }
 
 #mask {
+  scroll-snap-align: start;
   z-index: 3;
   position: relative;
   width: 210%;
@@ -205,6 +207,9 @@ body {
   --duration2: 0.4s;
   --duration3: 0.8s;
   --duration3: 1s;
+}
+.star{
+  scroll-snap-align: start;
 }
 /* prettier-ignore */
 #stars {
