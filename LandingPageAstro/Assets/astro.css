@@ -364,13 +364,13 @@ to align it properly */
 	.section-2{
 		position: absolute;
 		width: 100%;
-		top: 107vh;
+		top: 122vh;
 		z-index: 5;
 		margin: 0;
 		padding: 0;
 		background: transparent linear-gradient(180deg, #000000 0%, #191919 100%) 0% 0% no-repeat padding-box;
 		overflow-y: hidden;
-		height: 43.8vh;
+		height: 68vh;
 	}
 	
 	.image-container-1{
@@ -424,25 +424,79 @@ to align it properly */
 	}
 
 	.myBtn2{
-		
-		width: 200px;
-		height: 50px;
+		z-index: 2;
+		width: 14.641288433382138vw;
+		padding:9px;
+		height: auto;
+		background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
+		border: 1px solid #27D3FF;
+		border-radius: 38px;
+		background-size:66.92073170731707vw 31.695721077654518vh;
+		background-position: -100px;
+		color: #ffffff;
+		cursor: pointer;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		display: block;
 		margin-left: 1vw;
-		margin-bottom: 5em; /*change this to specify distance from bottom*/
+		margin-right: 0;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		transition: all 0.2s linear;
+		align-items: center;
+		margin-bottom: 0; /*change this to specify distance from bottom*/
 		bottom: 0;
-		left: unset;
-    	right: unset;
-    	position: unset;
+		display: inline-block;
 		
 }
 
+.myBtn2:hover {
+	transition: 0.4s ease-in-out;
+	background-position:-200px; 
+	border: 2px solid #ffffff;
+}
+
+.btntext {
+	display: inline-block;
+	vertical-align: bottom;
+	color: white;
+	font-size: 1.581259150805271vw;
+	font-weight: 200;
+}
+
+.text-container .btn2{
+	background: none;
+	border: 2px solid #707070;
+	margin-right: 0;
+	display: inline-block
+}
+
+.btn2 .btntext{
+	color: #707070;
+}
+
+.section-2 .btn2:hover > .btntext{
+	transition: 0.4s ease-in-out;
+	color: white;
+}
+.section-2 .btn2:hover{
+	border-color: #FFFFFF;
+	transition: 0.4s ease-in-out;
+}
 }
 
 @media only screen and (max-width: 501px){
 	.section-2{
+		position: absolute;
+		width: 100%;
+		top: 100vh;
+		z-index: 5;
 		margin: 0;
 		padding: 0;
-		background-image: linear-gradient(#000000 50%, #191919);
+		height: 25vh;
+		background: transparent linear-gradient(180deg, #000000 0%, #191919 100%) 0% 0% no-repeat padding-box;
 	}
 	
 	.image-container-1{
@@ -452,37 +506,36 @@ to align it properly */
 		margin: 0 auto;
 		padding: 0;
 	}
-
 	.image-container-1 img{
 		display: block;
 		width: 100%;
 		height: auto;
+		mix-blend-mode: lighten;
 	}
-
 	.text-container{
 		position: absolute;
-		margin: 0 auto;
+		margin: 3vh auto;
 		display: inline-block;
 		width: 45%;
 		height: auto;
 	}
-
 	.section-2 .text{
 		display: inline;
 		font-family: sans-serif;
-		font-size: 14px;
+		font-size: 0.8rem;
 		font-weight: 100;
 		color: #FFFFFF;
-		padding-left: 5px;
 	}
-
 	.section-2 p{
 		color: #8B9AB5;
 		font-family: 'Lato', sans-serif;
-		font-size: 10px;
-		padding-left: 5px;
+		font-size: 8px;
+		padding-left: 0.3rem;
+		margin-top: 10px;
+		margin-right: 0;
+		padding-right: 0;
+		line-height: 10px;
 	}
-
 	.circle{
 		height: 10px; 
 		width: 20px; 
@@ -491,7 +544,70 @@ to align it properly */
 		background-image: linear-gradient(-90deg, #48DBD8E8, #0287D0E6);
 		display: inline-block;
 	}
+	.myBtn2{
+		z-index: 2;
+		width: 65px;
+		padding:0;
+		height: 25px;
+		background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
+		border: 1px solid #27D3FF;
+		border-radius: 38px;
+		background-size:66.92073170731707vw 31.695721077654518vh;
+		background-position: -100px;
+		color: #ffffff;
+		cursor: pointer;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		margin-left: 1vw;
+		margin-right: 0;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		transition: all 0.2s linear;
+		align-items: center;
+		margin-bottom: 0; /*change this to specify distance from bottom*/
+		bottom: 0;
+		display: inline-block;
+		
 }
+
+.myBtn2:hover {
+	transition: 0.4s ease-in-out;
+	background-position:-200px; 
+	border: 2px solid #ffffff;
+}
+.btntext {
+	display: inline-block;
+	vertical-align: bottom;
+	color: white;
+	font-size: 8px;
+	font-weight: 100;
+}
+.text-container .btn2{
+	background: none;
+	border: 2px solid #707070;
+	margin:0;
+	display: inline-block;
+	height: 25px;
+	width: 65px;
+}
+
+.btn2 .btntext{
+	color: #707070;
+}
+.section-2 .btn2:hover > .btntext{
+	transition: 0.4s ease-in-out;
+	color: white;
+}
+.section-2 .btn2:hover{
+	border-color: #FFFFFF;
+	transition: 0.4s ease-in-out;
+}
+
+}
+
 
 @media (min-width: 501px){
 	.section-3{
@@ -499,7 +615,8 @@ to align it properly */
 		color: white;
 		position: absolute;
 		width: 100%;
-		top:150.9vh;
+		height: 120vh;
+		top:190vh;
 		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
 		opacity: 1;
 	}
@@ -507,14 +624,15 @@ to align it properly */
 	.section-3 img{
 		display: block;
 		max-width: 100%;
-		max-height: 100%;
+    	max-height: 100%;
 		z-index: -10;
 		mix-blend-mode: hue;
 	}
 
 	.section-3 h1{
+		align-items: center;
 		position: absolute;
-		top: 5vh;
+		top: 3.5vh;
     	left: 9vw;
 		display: inline-block;
 		font-family: sans-serif;
@@ -532,15 +650,97 @@ to align it properly */
 
 	.section-3 p{
 		position: absolute;
-		top: 14vh;
+		top: 17vh;
 		left: 4vw;
-		width: 47vw;
-		height: auto;
+		width: 70vw;
 		margin-left: 1vw;
 		color: #8B9AB5;
 		font-family: 'Lato', sans-serif;
 		font-size: 1.25rem;
 		margin-top: 5vh;
 		line-height: 1.75rem;
+	}
+	.section-3 .btn2{
+		position: absolute;
+		background: none;
+		border: 2px solid #707070;
+		bottom: 60vh;
+		height: 8vh;
+		left: 4vw;
+		margin-top: 10px;
+	}
+	.section-3 .btn2:hover{
+		border-color: #FFFFFF;
+		transition: 0.4s ease-in-out;
+	}
+	.section-3 .btn2:hover > .btntext{
+	color: #FFFFFF;
+	transition: 0.4s ease-in-out;
+	}
+}
+@media (max-width: 501px){
+	.section-3{
+		z-index: 5;
+		color: white;
+		position: absolute;
+		width: 100vw;
+		top:125vh;
+		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
+		opacity: 1;
+	}
+	.section-3 img{
+		display: block;
+		width: 100vw;
+		height: auto;
+		z-index: -10;
+		mix-blend-mode: hue;
+	}
+	.section-3 h1{
+		align-items: center;
+		position: absolute;
+		top: 8.293460925039872vh;
+    left: 8vw;
+		display: inline-block;
+		font-family: sans-serif;
+		font-size: 0.8rem;
+		font-weight: 100;
+	}
+	.section-3 .circle{
+		position: absolute;
+		top: 10vh;
+		left: 4vw;
+		display: inline-block;
+	}
+	.section-3 p{
+		position: absolute;
+		top: 17vh;
+		left: 4vw;
+		width: 70vw;
+		margin-left: 1vw;
+		color: #8B9AB5;
+		font-family: 'Lato', sans-serif;
+		font-size: 8px;
+		margin-top: -12.5px;
+		line-height: 10px;
+	}
+	.section-3 .btn2{
+		position: absolute;
+		background: none;
+		border: 2px solid #707070;
+		top: 21.5311004784689vh;
+		height: 3.9872408293460926vh;
+		left: 4vw;
+		width: 16vw;
+	}
+	.section-3 .btn2:hover{
+		border-color: #FFFFFF;
+		transition: 0.4s ease-in-out;
+}
+.section-3 .btn2:hover > .btntext{
+	color: #FFFFFF;
+	transition: 0.4s ease-in-out;
+}
+	.section-3 .btntext{
+		margin-bottom: 0.45vw;
 	}
 }
