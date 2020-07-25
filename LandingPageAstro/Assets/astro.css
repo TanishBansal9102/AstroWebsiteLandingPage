@@ -90,7 +90,8 @@
 	text-align: center;
 	text-decoration: none;
 	display: block;
-	
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -109,26 +110,8 @@
 	border: 2px solid #ffffff;
 }
 
-svg {
-	display: block;
-	position: absolute;
-	left: -3px;
-	top: -2px;
-	fill: none;
-	stroke: #1984ff;
-	stroke-dasharray: 150 480;
-	stroke-dashoffset: 150;
-	transition: 1s ease-in-out;
-}
-.border2 {
-	display: none;
-}
-
-.myBtn:hover svg {
-	stroke-dashoffset: -480;
-}
-
 .btntext {
+	transform: translateZ(20px);
 	display: inline-block;
 	vertical-align: bottom;
 	color: white;
@@ -456,6 +439,8 @@ to align it properly */
 		margin-bottom: 0; /*change this to specify distance from bottom*/
 		bottom: 0;
 		display: inline-block;
+		transform-style: preserve-3d;
+		transform: perspective(1000px);
 		
 }
 
@@ -471,9 +456,12 @@ to align it properly */
 	color: white;
 	font-size: 1.581259150805271vw;
 	font-weight: 200;
+	transform: translateZ(20px);
 }
 
 .text-container .btn2{
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
 	background: none;
 	outline: none;
 	border: 2px solid #707070;
@@ -483,6 +471,7 @@ to align it properly */
 
 .btn2 .btntext{
 	color: #707070;
+	transform: translateZ(20px);
 }
 
 .section-2 .btn2:hover > .btntext{
@@ -579,6 +568,8 @@ to align it properly */
 		margin-bottom: 0; /*change this to specify distance from bottom*/
 		bottom: 0;
 		display: inline-block;
+		transform-style: preserve-3d;
+		transform: perspective(1000px);
 		
 }
 
@@ -593,6 +584,7 @@ to align it properly */
 	color: white;
 	font-size: 8px;
 	font-weight: 100;
+	transform: translateZ(20px);
 }
 .text-container .btn2{
 	background: none;
@@ -602,10 +594,13 @@ to align it properly */
 	display: inline-block;
 	height: 25px;
 	width: 65px;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
 }
 
 .btn2 .btntext{
 	color: #707070;
+	transform: translateZ(20px);
 }
 .section-2 .btn2:hover > .btntext{
 	transition: 0.4s ease-in-out;
@@ -680,6 +675,8 @@ to align it properly */
 		height: 8vh;
 		left: 4vw;
 		margin-top: 10px;
+		transform-style: preserve-3d;
+		transform: perspective(1000px);
 	}
 	.section-3 .btn2:hover{
 		border-color: #FFFFFF;
@@ -689,6 +686,10 @@ to align it properly */
 	color: #FFFFFF;
 	transition: 0.4s ease-in-out;
 	}
+	.section-3 .btn2 .btntext{
+		transform: translateZ(20px);
+		}
+	
 }
 @media (max-width: 501px){
 	.section-3{
@@ -744,6 +745,8 @@ to align it properly */
 		height: 3.9872408293460926vh;
 		left: 4vw;
 		width: 16vw;
+		transform-style: preserve-3d;
+		transform: perspective(1000px);
 	}
 	.section-3 .btn2:hover{
 		border-color: #FFFFFF;
@@ -754,6 +757,7 @@ to align it properly */
 	transition: 0.4s ease-in-out;
 }
 	.section-3 .btntext{
+		transform: translateZ(20px);
 		margin-bottom: 0.45vw;
 	}
 }
