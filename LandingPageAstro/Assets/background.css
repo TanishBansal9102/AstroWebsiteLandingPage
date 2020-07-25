@@ -8,7 +8,7 @@ html {
   scroll-snap-type: y proximity;
 }
 html::-webkit-scrollbar {
-  width: 30px;
+  width: 15px;
   height: 30px;
 }
 html::-webkit-scrollbar-thumb {
