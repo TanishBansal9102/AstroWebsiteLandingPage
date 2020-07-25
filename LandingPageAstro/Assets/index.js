@@ -28,6 +28,13 @@ $(document).ready(function(){
 			$(".navbutton").css("transform", "translateX(0)");
 		}
 	});
+	var explore = $('#explore');
+	var section2 = $('.section-2');
+	explore.on('click', function() {
+		$('html,body').animate({
+			scrollTop: section2.offset().top},
+			'slow');
+	});
 	var star = $('.star');
 	var earthcontainer = $('#earthContainer');
 	var earth = $('#earth');
@@ -36,7 +43,6 @@ $(document).ready(function(){
 	var linea = $('#linea');
 	var lineb = $('#lineb');
 	var linec = $('#linec');
-	var explore = $('#explore');
 	var navbar = $('.navbar');
 	var rectangle1 = $('#rectangle1');
 	var rectangle2 = $('#rectangle2');
@@ -44,7 +50,6 @@ $(document).ready(function(){
 	var rectangle4 = $('#rectangle4');
 	var rectangle5 = $('#rectangle5');
 	var rectangle6 = $('#rectangle6');
-	var section2 = $('.section-2');
 	var section3 = $('.section-3');
 
 	$(window).on('scroll', function() {

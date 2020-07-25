@@ -72,7 +72,7 @@
 .myBtn {
 	z-index: 3;
 	position: fixed;
-	
+	outline: none;
 	width: 239px;
 	height: 75px;
 	background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
@@ -310,11 +310,15 @@ to align it properly */
 	font-family: 'Roboto', sans-serif;
 	font-size: calc((12/768) * ((100vw + 100vh) / 2));
 	color: #ffffff;
+	cursor: pointer;
 
 	opacity: 0;
 	transform: translateX(calc((40/768) * ((100vw + 100vh) / 2)));
-	transition: opacity 500ms ease-in-out 0s, transform 500ms ease-in-out 0s;
-	-webkit-transition: opacity 500ms ease-in-out 0s, transform 500ms ease-in-out 0s;
+	transition: opacity 500ms ease-in-out 0s, transform 500ms ease-in-out 0s, all 500ms ease-in-out 0s;
+	-webkit-transition: opacity 500ms ease-in-out 0s, transform 500ms ease-in-out 0s,  all 500ms ease-in-out 0s;
+}
+.navbar .navbuttons .navbutton:hover{
+	color: #21BBFF;
 }
 
 .navbar .togglebutton
@@ -429,6 +433,7 @@ to align it properly */
 		width: 14.641288433382138vw;
 		padding:9px;
 		height: auto;
+		outline: none;
 		background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
 		border: 1px solid #27D3FF;
 		border-radius: 38px;
@@ -469,6 +474,7 @@ to align it properly */
 
 .text-container .btn2{
 	background: none;
+	outline: none;
 	border: 2px solid #707070;
 	margin-right: 0;
 	display: inline-block
@@ -550,6 +556,7 @@ to align it properly */
 		width: 65px;
 		padding:0;
 		height: 25px;
+		outline: none;
 		background: transparent linear-gradient(105deg, #0287D0E6 0%, #49AADCE8 52%, #48DBD8E8 100%) 0% 0% no-repeat padding-box;
 		border: 1px solid #27D3FF;
 		border-radius: 38px;
@@ -588,6 +595,7 @@ to align it properly */
 }
 .text-container .btn2{
 	background: none;
+	outline: none;
 	border: 2px solid #707070;
 	margin:0;
 	display: inline-block;
@@ -664,6 +672,7 @@ to align it properly */
 	}
 	.section-3 .btn2{
 		position: absolute;
+		outline: none;
 		background: none;
 		border: 2px solid #707070;
 		bottom: 60vh;
@@ -727,6 +736,7 @@ to align it properly */
 	}
 	.section-3 .btn2{
 		position: absolute;
+		outline: none;
 		background: none;
 		border: 2px solid #707070;
 		top: 21.5311004784689vh;
