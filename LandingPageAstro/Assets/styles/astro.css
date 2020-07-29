@@ -815,13 +815,14 @@ to align it properly */
 }
 
 .section-4 h1{
-	position: absolute;
 	font-size: 3rem;
 	color: white;
 	font-weight: 200;
 	font-family: sans-serif;
-	left: 45%;
-	top: 2.5vh;
+	margin-top:7vh;
+	width: 100%;
+	text-align: center;
+	margin-left: 3vw;
 }
 
 .section-4 p{
