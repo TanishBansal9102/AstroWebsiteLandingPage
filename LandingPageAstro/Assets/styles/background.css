@@ -5,8 +5,9 @@ html {
   overflow-x: hidden;
   scrollbar-color: #312d3c #201c29;
   scrollbar-width: thin;
-  scroll-snap-type: y proximity;
+  
 }
+/*scroll-snap-type: y proximity;*/
 html::-webkit-scrollbar {
   width: 15px;
   height: 30px;
@@ -23,7 +24,7 @@ html::-webkit-scrollbar-track {
 body {
   height: 100%;
   background-color: #000;
-  background-image: url("./BG.png");
+  background-image: url("../images/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,7 +68,7 @@ body {
   /* [4] Tweak the appearance, and give it a nice background i.e. the world map */
   color: #000;
   border-radius: 50%;
-  background: url(./maptransparent.png) 0 0 repeat;
+  background: url(../images/maptransparent.png) 0 0 repeat;
   background-size: cover;
   transform: rotate(90deg);
   -webkit-animation: rotate 120s linear infinite;
@@ -185,7 +186,7 @@ body {
     content: '';
     opacity: 1;
     border-radius: 50%;
-    background: url(./sphereedit.png);
+    background: url(../images/sphereedit.png);
     mix-blend-mode: color;
     background-size: cover;
     transform: rotate(-90deg);
