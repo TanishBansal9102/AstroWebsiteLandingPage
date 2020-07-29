@@ -1,4 +1,7 @@
-
+html,body{
+	margin: 0;
+	padding: 0;
+}
 @font-face {
 	font-family: Railway;
 	src: url(../fonts/Railway.otf);
@@ -639,7 +642,7 @@ to align it properly */
 		position: relative;
 		display: block;
 		max-width: 100%;
-    	max-height: 100%;
+    max-height: 100%;
 		z-index: -10;
 		mix-blend-mode: hue;
 	}
@@ -853,17 +856,21 @@ to align it properly */
 	resize: both;
 }
 
-.cell{
-  background: deepskyblue;
+.cell img{
+	height: 12.5vw;
+	width: 13.5vw;
+	padding: 0;
+	margin: 0;
 }
-.cell-2 {
-  background: orangered;
-}
-.cell-3 {
-  background: royalblue;
-}
-.cell-4 {
-  background: gold;
+
+.celltitle{
+	position: absolute;
+	font-weight: 100;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1.25px;
+	text-align: center;
+	color: white;
+	z-index: 20;
 }
 
 .section-4 .btn2{
