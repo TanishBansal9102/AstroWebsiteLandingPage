@@ -359,7 +359,7 @@ to align it properly */
 @media (min-width: 501px){
 	.section-2{
 		scroll-snap-align: start;
-		position: absolute;
+		position: relative;
 		width: 100%;
 		top: 122vh;
 		z-index: 5;
@@ -367,7 +367,7 @@ to align it properly */
 		padding: 0;
 		background: transparent linear-gradient(180deg, #000000 0%, #191919 100%) 0% 0% no-repeat padding-box;
 		overflow-y: hidden;
-		height: 68vh;
+		height: auto;
 	}
 	
 	.image-container-1{
@@ -386,7 +386,7 @@ to align it properly */
 	}
 
 	.text-container{
-		position: absolute;
+		position: relative;
 		margin: 3vh auto;
 		display: inline-block;
 		width: 45%;
@@ -494,7 +494,7 @@ to align it properly */
 
 @media only screen and (max-width: 501px){
 	.section-2{
-		position: absolute;
+		position: relative;
 		width: 100%;
 		top: 100vh;
 		z-index: 5;
@@ -518,7 +518,7 @@ to align it properly */
 		mix-blend-mode: lighten;
 	}
 	.text-container{
-		position: absolute;
+		position: relative;
 		margin: 3vh auto;
 		display: inline-block;
 		width: 45%;
@@ -627,27 +627,32 @@ to align it properly */
 		scroll-snap-align: start;
 		z-index: 5;
 		color: white;
-		position: absolute;
+		position: relative;
 		width: 100%;
-		height: 120vh;
-		top:190vh;
+		height: auto;
+		top:122vh;
 		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
 		opacity: 1;
 	}
 
 	.section-3 img{
+		position: relative;
 		display: block;
 		max-width: 100%;
     	max-height: 100%;
 		z-index: -10;
 		mix-blend-mode: hue;
 	}
+	.section-3 .content-3{
+		position: absolute;
+		top: 1vh;
+	} 
 
 	.section-3 h1{
 		align-items: center;
-		position: absolute;
-		top: 3.5vh;
-    	left: 9vw;
+		position: relative;
+		top: 10vh;
+    	left: 5vw;
 		display: inline-block;
 		font-family: sans-serif;
 		font-size: 3rem;
@@ -656,14 +661,14 @@ to align it properly */
 	}
 
 	.section-3 .circle{
-		position: absolute;
+		position: relative;
 		top: 10vh;
 		left: 4vw;
 		display: inline-block;
 	}
 
 	.section-3 p{
-		position: absolute;
+		position: relative;
 		top: 17vh;
 		left: 4vw;
 		width: 70vw;
@@ -675,13 +680,14 @@ to align it properly */
 		line-height: 1.75rem;
 	}
 	.section-3 .btn2{
-		position: absolute;
+		position: relative;
 		outline: none;
 		background: none;
 		border: 2px solid #707070;
 		bottom: 60vh;
 		height: 8vh;
 		left: 4vw;
+		top: 18vh;
 		margin-top: 10px;
 		transform-style: preserve-3d;
 		transform: perspective(1000px);
@@ -703,7 +709,7 @@ to align it properly */
 	.section-3{
 		z-index: 5;
 		color: white;
-		position: absolute;
+		position: relative;
 		width: 100vw;
 		top:125vh;
 		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
@@ -718,7 +724,7 @@ to align it properly */
 	}
 	.section-3 h1{
 		align-items: center;
-		position: absolute;
+		position: relative;
 		top: 8.293460925039872vh;
     left: 8vw;
 		display: inline-block;
@@ -727,13 +733,13 @@ to align it properly */
 		font-weight: 100;
 	}
 	.section-3 .circle{
-		position: absolute;
+		position: relative;
 		top: 10vh;
 		left: 4vw;
 		display: inline-block;
 	}
 	.section-3 p{
-		position: absolute;
+		position: relative;
 		top: 17vh;
 		left: 4vw;
 		width: 70vw;
@@ -745,7 +751,7 @@ to align it properly */
 		line-height: 10px;
 	}
 	.section-3 .btn2{
-		position: absolute;
+		position: relative;
 		outline: none;
 		background: none;
 		border: 2px solid #707070;
@@ -801,13 +807,13 @@ to align it properly */
 	margin: 0;
 	padding: 0;
 	z-index: 10;
-	position: absolute;
-	top:310vh;
-	width: 100vw;
+	position: relative;
+	top:131vh;
+	width: 107vw;
 	}
 
 .section-4 .circle{
-	position: absolute;
+	position: relative;
 	top:0;
 	transform: rotate(180deg);
 	background-image: linear-gradient( #48DBD8E8, #0287D0E6);
@@ -826,7 +832,7 @@ to align it properly */
 }
 
 .section-4 p{
-	position: absolute;
+	position: relative;
 	color: #8B9AB5;
 	text-align: center;
 	font-family: 'Lato', sans-serif;

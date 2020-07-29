@@ -36,7 +36,7 @@ body {
 
 #mask {
   z-index: 3;
-  position: relative;
+  position: absolute;
   width: 210%;
   height: 130vw;
   margin: 65vh -5%;
