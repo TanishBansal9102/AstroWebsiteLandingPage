@@ -843,12 +843,12 @@ to align it properly */
 }
 
 .cards{
-	margin-right: 20vw;
-	margin-left:10vw;
+	margin-left:6.75vw;
+	margin-right: auto;
 	margin-top: 15vh;
-	height: 140px;
+	height: 12.5vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 13.5vw 13.5vw 13.5vw 13.5vw;
 	grid-gap: 0 10vw;
 	resize: both;
 }
@@ -873,7 +873,7 @@ to align it properly */
 	outline: none;
 	border: 2px solid #707070;
 	margin-left: 39%;
-	margin-right: 0;
+	margin-right: auto;
 	margin-top: 10vh;
 	display: inline-block;
 }
