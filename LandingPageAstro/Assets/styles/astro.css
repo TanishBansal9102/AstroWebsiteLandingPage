@@ -7,13 +7,36 @@ html,body{
 	src: url(../fonts/Railway.otf);
 }
 @font-face {
-	font-family: DINPro;
-	src: url(../fonts/DINPro-Medium-tr.ttf);
+	font-family: DINPro-Light;
+	src: url("../fonts/DINPro-Light-tr.ttf");
 }
 @font-face {
 	font-family: Petita;
 	src: url(../fonts/petitamedium.ttf);
 }
+
+@font-face {
+	font-family: DINPro-Medium;
+	font-weight: 100;
+	src: url("../fonts/DINPro-Medium-tr.ttf")
+}
+
+@font-face{
+	font-family: PetitaBold;
+	font-weight: 100;
+	src: url("../fonts/petitamedium.ttf");
+}
+
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/Lato-Regular.ttf")
+}
+
+@font-face {
+	font-family: ModernSans-Light;
+	src: url("../fonts/ModernSans-Light.otf")
+}
+
 #preloader  {
 	position: fixed;
 	top: 0;
@@ -654,8 +677,8 @@ to align it properly */
 	.section-3 h1{
 		align-items: center;
 		position: relative;
-		top: 10vh;
-    	left: 5vw;
+		top: 10.75vh;
+    left: 3.25vw;
 		display: inline-block;
 		font-family: sans-serif;
 		font-size: 3rem;
@@ -900,5 +923,222 @@ to align it properly */
 	transition: 0.4s ease-in-out;
 }
 
+.section-5{
+	z-index: 5;
+	background: transparent linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 9, 0.07) 41%, rgba(10, 10, 10, 0.05) 74%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+}
 
+.section-5 img{
+	position: relative;
+	top:150vh;
+	width: 100vw;
+	mix-blend-mode: lighten;
+}
 
+.section-5 .circle{
+	position: relative;
+	top: -85vh;
+	left: 4vw;
+	display: inline-block;
+}
+
+.section-5 h1{
+		align-items: center;
+		position: relative;
+		top: -85vh;
+    left: 3.25vw;
+		display: inline-block;
+		font:3rem PetitaBold;
+		font-weight: 100;
+		margin-left: 10px;
+		z-index: 10;
+		color: white;
+	}
+
+.section-5 .text-0{
+	z-index: 20;
+	position: relative;
+	top:-80vh;
+	left: 5vw;
+	color: #8B9AB5;
+	font: 1.25rem ModernSans-Light;
+	margin-top: 0;
+	line-height: 1.75rem;
+	width: 50vw;
+	font-weight: 100;
+}	
+
+.section-5 .number-1{
+	z-index: 20;
+	color:rgba(62, 131, 136, 1);
+	font: 147px DINPro-Light;
+	letter-spacing: 2.03px;
+	position: relative;
+	left: 5vw;
+	top: -90vh;
+}
+
+.section-5 .heading-1{
+	z-index: 20;
+	color: rgba(255, 255, 255, 1);
+	font:1.75rem DINPro-Light;
+	font-weight: 100;
+	position: relative;
+	top: -135vh;
+	left: 17.5vw;
+	letter-spacing: 0.4px;
+}
+
+.section-5 .text-1{
+	color: rgba(105, 118, 138, 1);
+	z-index: 20;
+	position: relative;
+	top: -135.3vh;
+	left: 17.5vw;
+	font: 1.25rem DINPro-Medium;
+	margin-top: 0;
+	line-height: 1.75rem;
+	width: 50vw;
+	font-weight: 100;
+	width: 43vw;
+}
+
+.section-5 .number-2{
+	z-index: 20;
+	color:rgba(62, 131, 136, 1);
+	font: 147px DINPro-Light;
+	letter-spacing: 2.03px;
+	position: relative;
+	left: 35vw;
+	top: -150vh;
+}
+
+.section-5 .heading-2{
+	z-index: 20;
+	color: rgba(255, 255, 255, 1);
+	font-weight: 100;
+	position: relative;
+	font:1.75rem DINPro-Light;
+	top: -195vh;
+	left: 48.5vw;
+	letter-spacing: 0.4px;
+}
+
+.section-5 .text-2{
+	color: rgba(105, 118, 138, 1);
+	z-index: 20;
+	position: relative;
+	top: -195.5vh;
+	left: 48.5vw;
+	font: 1.25rem DINPro-Medium;
+	margin-top: 0;
+	line-height: 1.75rem;
+	width: 50vw;
+	font-weight: 100;
+	width: 43vw;
+}
+
+.section-5 .number-3{
+	z-index: 20;
+	color:rgba(62, 131, 136, 1);
+	font: 147px DINPro-Light;
+	letter-spacing: 2.03px;
+	position: relative;
+	left: 5vw;
+	top: -210vh;
+}
+
+.section-5 .heading-3{
+	z-index: 20;
+	color: rgba(255, 255, 255, 1);
+	font:1.75rem DINPro-Light;
+	font-weight: 100;
+	position: relative;
+	top: -255.3vh;
+	left: 17.5vw;
+	letter-spacing: 0.4px;
+}
+
+.section-5 .text-3{
+	color: rgba(105, 118, 138, 1);
+	z-index: 20;
+	position: relative;
+	top: -255.5vh;
+	left: 17.5vw;
+	font: 1.25rem DINPro-Medium;
+	margin-top: 0;
+	line-height: 1.75rem;
+	width: 50vw;
+	font-weight: 100;
+	width: 43vw;
+}
+
+.section-5 .number-4{
+	z-index: 20;
+	color:rgba(62, 131, 136, 1);
+	font: 147px DINPro-Light;
+	letter-spacing: 2.03px;
+	position: relative;
+	left: 35vw;
+	top: -270vh;
+}
+
+.section-5 .heading-4{
+	z-index: 20;
+	color: rgba(255, 255, 255, 1);
+	font:1.75rem DINPro-Light;
+	font-weight: 100;
+	position: relative;
+	top: -315vh;
+	left: 48.5vw;
+	letter-spacing: 0.4px;
+}
+
+.section-5 .text-4{
+	color: rgba(105, 118, 138, 1);
+	z-index: 20;
+	position: relative;
+	top: -315.5vh;
+	left: 48.5vw;
+	font: 1.25rem DINPro-Medium;
+	margin-top: 0;
+	line-height: 1.75rem;
+	width: 50vw;
+	font-weight: 100;
+	width: 43vw;
+}
+
+.section-5 .number-5{
+	z-index: 20;
+	color:rgba(62, 131, 136, 1);
+	font: 147px DINPro-Light;
+	letter-spacing: 2.03px;
+	position: relative;
+	left: 5vw;
+	top: -328vh;
+}
+
+.section-5 .heading-5{
+	z-index: 20;
+	color: rgba(255, 255, 255, 1);
+	font:1.75rem DINPro-Light;
+	font-weight: 100;
+	position: relative;
+	top: -373vh;
+	left: 17.5vw;
+	letter-spacing: 0.4px;
+}
+
+.section-5 .text-5{
+	color: rgba(105, 118, 138, 1);
+	z-index: 20;
+	position: relative;
+	top: -373.5vh;
+	left: 17.5vw;
+	font: 1.25rem DINPro-Medium;
+	margin-top: 0;
+	line-height: 1.75rem;
+	width: 50vw;
+	font-weight: 100;
+	width: 43vw;
+}
