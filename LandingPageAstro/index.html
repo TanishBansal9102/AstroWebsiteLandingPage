@@ -2,9 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
+		<meta
+			name="viewport"
+			content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+		/>
 
-		<link rel="stylesheet" type="text/css" href="Assets/astro.css" />
+		<link rel="stylesheet" type="text/css" href="Assets/styles/astro.css" />
+		<link rel="stylesheet" type="text/css" href="Assets/styles/background.css" />
 		<link
 			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 			rel="stylesheet"
@@ -12,19 +16,22 @@
 			crossorigin="anonymous"
 		/>
 		<title>Document</title>
-		<script
-			type="text/javascript"
-			src="Assets/jquery-2.1.4.min.js"
-		></script>
+		<script type="text/javascript" src="Assets/JS/jquery-3.5.1.min.js"></script>
 
-		<script type="text/javascript" src="Assets/index.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="Assets/JS/index.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<link rel="stylesheet" href="./Assets/fonts/petitabold.ttf">
 	</head>
 	<body>
+		<div id="preloader">
+			<div id="status"></div>
+		  </div>
 		<div class="navbar">
-			<div class="logo">
-
-			</div>
+			<div data-tilt class="logo"></div>
 			<div class="navbuttons">
 				<div class="navbutton">
 					HOME
@@ -32,7 +39,7 @@
 				<div class="navbutton">
 					ABOUT
 				</div>
-				<div class="navbutton">
+				<div onclick="location.href='blog.html';" class="navbutton">
 					BLOG
 				</div>
 				<div class="navbutton">
@@ -44,52 +51,482 @@
 			</div>
 			<div class="togglebutton">
 				<svg viewBox="0 0 100 100">
-  					<rect x="35" y="39.25" width="30" height="1.5" class="line" id="line1"></rect>
-  					<rect x="35" y="49.25" width="30" height="1.5" class="line" id="line2"></rect>
-  					<rect x="35" y="59.25" width="30" height="1.5" class="line" id="line3"></rect>
+					<rect
+						x="35"
+						y="39.25"
+						width="30"
+						height="1.5"
+						class="line"
+						id="line1"
+					></rect>
+					<rect
+						x="35"
+						y="49.25"
+						width="30"
+						height="1.5"
+						class="line"
+						id="line2"
+					></rect>
+					<rect
+						x="35"
+						y="59.25"
+						width="30"
+						height="1.5"
+						class="line"
+						id="line3"
+					></rect>
 				</svg>
 			</div>
 		</div>
-
-		<div class="video-background">
-			<video id="planetvid" autoplay playinline muted>
-				<source src="newvideo.mp4" type="video/mp4" />
-			</video>
+		<div id="ham">
+			<div id="rectangle1" class="rectanglebig rectangle"></div>
+			<div id="rectangle2" class="rectangle"></div>
+			<div id="rectangle3" class="rectangle"></div>
+			<div id="rectangle4" class="rectangle"></div>
+			<div id="rectangle5" class="rectangle"></div>
+			<div id="rectangle6" class="rectangle"></div>
 		</div>
-
-		<button id="myBtn" class="bg" style="display: none;">
+		<div class="back">
+			<div class="star">
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
+			<div id="stars4"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 294;
+					--speed: 5;
+					--delay: 743;
+					--x: 27;
+					--y: 27;
+					--travel: 3;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 301;
+					--speed: 6;
+					--delay: 431;
+					--x: 33;
+					--y: 27;
+					--travel: 16;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 285;
+					--speed: 4;
+					--delay: 619;
+					--x: 31;
+					--y: 23;
+					--travel: 6;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 277;
+					--speed: 10;
+					--delay: 29;
+					--x: 35;
+					--y: 28;
+					--travel: 16;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 278;
+					--speed: 6;
+					--delay: 59;
+					--x: 41;
+					--y: 21;
+					--travel: 8;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 280;
+					--speed: 10;
+					--delay: 797;
+					--x: 32;
+					--y: 26;
+					--travel: 14;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 302;
+					--speed: 2;
+					--delay: 31;
+					--x: 55;
+					--y: 22;
+					--travel: 12;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 334;
+					--speed: 5;
+					--delay: 23;
+					--x: 23;
+					--y: 21;
+					--travel: 2;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 293;
+					--speed: 5;
+					--delay: 53;
+					--x: 33;
+					--y: 29;
+					--travel: 6;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 316;
+					--speed: 5;
+					--delay: 97;
+					--x: 79;
+					--y: 40;
+					--travel: 5;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 323;
+					--speed: 3;
+					--delay: 89;
+					--x: 81;
+					--y: 17;
+					--travel: 11;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 306;
+					--speed: 2;
+					--delay: 71;
+					--x: 32;
+					--y: 20;
+					--travel: 13;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 313;
+					--speed: 10;
+					--delay: 73;
+					--x: 45;
+					--y: 12;
+					--travel: 5;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 294;
+					--speed: 4;
+					--delay: 37;
+					--x: 52;
+					--y: 65;
+					--travel: 18;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 12;
+					--speed: 7;
+					--delay: 1283;
+					--x: 48;
+					--y: 83;
+					--travel: 13;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 310;
+					--speed: 20;
+					--delay: 830;
+					--x: 59;
+					--y: 32;
+					--travel: 1;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 320;
+					--speed: 10;
+					--delay: 89;
+					--x: 89;
+					--y: 23;
+					--travel: 3;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 317;
+					--speed: 20;
+					--delay: 101;
+					--x: 78;
+					--y: 51;
+					--travel: 6;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 319;
+					--speed: 4;
+					--delay: 139;
+					--x: 31;
+					--y: 63;
+					--travel: 13;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 304;
+					--speed: 4;
+					--delay: 149;
+					--x: 71;
+					--y: 35;
+					--travel: 15;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 316;
+					--speed: 8;
+					--delay: 211;
+					--x: 62;
+					--y: 45;
+					--travel: 15;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 339;
+					--speed: 8;
+					--delay: 311;
+					--x: 41;
+					--y: 66;
+					--travel: 7;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 289;
+					--speed: 8;
+					--delay: 179;
+					--x: 102;
+					--y: 22;
+					--travel: 4;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 282;
+					--speed: 20;
+					--delay: 131;
+					--x: 35;
+					--y: 59;
+					--travel: 9;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 346;
+					--speed: 10;
+					--delay: 401;
+					--x: 63;
+					--y: 33;
+					--travel: 23;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 321;
+					--speed: 5;
+					--delay: 457;
+					--x: 45;
+					--y: 21;
+					--travel: 23;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 20;
+					--speed: 9;
+					--delay: 569;
+					--x: 31;
+					--y: 31;
+					--travel: 20;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 328;
+					--speed: 15;
+					--delay: 977;
+					--x: 78;
+					--y: 21;
+					--travel: 11;
+					--trail: 2;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 310;
+					--speed: 10;
+					--delay: 769;
+					--x: 25;
+					--y: 14;
+					--travel: 8;
+					--trail: 4;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div
+				class="geminid"
+				style="
+					--angle: 331;
+					--speed: 7;
+					--delay: 1459;
+					--x: 43;
+					--y: 84;
+					--travel: 7;
+					--trail: 3;
+				"
+			>
+				<div class="geminid__trail"></div>
+			</div>
+			<div id="earthContainer">
+				<div id="earthglowa"></div>
+				<div id="earthglowb"></div>
+				<div id="earth"></div>
+			</div>
+			<div id="mask"></div>
+		</div>
+		<div id="title-text">
+			<div id="linea">BEYOND THE</div>
+			<div id="lineb">HORIZON</div>
+			<div id="linec">ASTRO CLUB, BITS PILANI</div>
+		</div>
+		<button data-tilt id="explore" class="bg myBtn" style="display: none;">
 			<!--For animation-->
-			<svg
-				width="175x"
-				height="50px"
-				viewBox="0 0 175 50"
-				class="border1"
-			>
-				<polyline
-					points="174,1 174,49 1,49 1,1 174,1"
-					class="bg-line"
-				/>
-				<polyline
-					points="174,1 174,49 1,49 1,1 174,1"
-					class="hl-line"
-				/>
-			</svg>
-			<svg
-				width="130px"
-				height="50px"
-				viewBox="0 0 130 50"
-				class="border2"
-			>
-				<polyline
-					points="129,1 129,49 1,49 1,1 129,1"
-					class="bg-line"
-				/>
-				<polyline
-					points="129,1 129,49 1,49 1,1 129,1"
-					class="hl-line"
-				/>
-			</svg>
-			<i class="fa"></i>
 			<div class="btntext">
 				Explore!
 			</div>
@@ -111,15 +548,126 @@
 		</div>
 
 		<script>
-			$("#myBtn").delay(10000).fadeIn(1000);
-			$("#social").delay(10000).fadeIn(1000);
+			$('#explore').delay(3000).fadeIn(1000)
+			$('#social').delay(3000).fadeIn(1000)
 		</script>
+		<div class="section-2">
+			<div class="image-container-1">
+				<img src="Assets/images/component (1).png" alt="meteor">
+			</div>
+			<div class="text-container">
+				<div class="circle-text">
+					<div class="circle"></div>
+					<h1 class="text">What do we do?</h1>
+				</div>
+				<p>Astro Club, BITS Pilani’s oﬃcial Astronomy Club, is a group of enthusiasts with a keen interest in astronomy and
+				astrophysics. Students and faculty part of this group work to promote astronomy and spread knowledge among the students.</p>
+				<button data-tilt class="myBtn2" class="bg">
+					<div class="btntext">
+						Contact
+					</div>
+				</button>
+				<button data-tilt class="myBtn2 btn2" class="bg">
+					<div class="btntext">
+						Sponsor Us		
+					</div>
+				</button>
+			</div>
+		</div>
 
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
+		<div class="section-3">
+			<img src="./Assets/images/telescope.jpg" alt="component">
+			<div class="content-3">
+				<div class="circle"></div>
+				<h1>Observations</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor cum quod neque et! Sed placeat perspiciatis
+					excepturi, quasi perferendis temporibus, exercitationem ipsa dicta inventore odio eius laborum repudiandae
+					repellat.</p>
+				<button data-tilt class="myBtn2 btn2" class="bg">
+					<div class="btntext">
+						Read More
+					</div>
+				</button>
+			</div>
+		</div>
+		
+		
+		<div class="section-4">
+			<div class="circle"></div>
+			<h1>Our Blogs</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+			<div class="cards">
+				<div class="cell cell-1">
+					<span class="celltitle">Blackhole</span>
+					<img src="./Assets/images/Image 1.png" alt="">
+				</div>
+				<div class="cell cell-2">
+					<span class="celltitle">Composition of Stars</span>
+					<img src="./Assets/images/Image 2@2x.png" alt="">
+				</div>
+				<div class="cell cell-3">
+					<span class="celltitle">Hubble's Law</span>
+					<img src="./Assets/images/Image 4.png" alt="">
+				</div>
+				<div class="cell cell-4">
+					<span class="celltitle">Spectra of stars</span>
+					<img src="./Assets/images/Image 5.png" alt="">	
+				</div>
+			</div>
+			<button data-tilt class="myBtn2 btn2" class="bg">
+				<div class="btntext">
+					Show More
+				</div>
+			</button>
+		</div>
+
+		<div class="section-5">
+			<img src="./Assets/images/Nebula BG@2x.png" alt="">
+			<div id="section5content">
+			<div class="circle"></div>
+			<h1>Events</h1>
+			<p class="text-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+			<p class="number-1">01</p>
+			<p class="heading-1">Nights' Watch Session</p>
+			<p class="text-1">Lorem ipsum dolor sit amet Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+			<p class="number-2">02</p>
+			<p class="heading-2">Astropixel</p>
+			<p class="text-2">Lorem ipsum dolor sit amet Duis aute irure dolor in troeojs repreh enderit in voluptate velit esse cillum dolore eu</p>
+			<p class="number-3">03</p>
+			<p class="heading-3">Deep Sky Hunt</p>
+			<p class="text-3">Lorem ipsum dolor sit amet Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+			<p class="number-4">04</p>
+			<p class="heading-4">What The Frequency!</p>
+			<p class="text-4">Lorem ipsum dolor sit amet Duis aute irure dolor in troeojs repreh enderit in voluptate velit esse
+				cillum dolore eu</p>
+			<p class="number-5">05</p>
+			<p class="heading-5">42</p>
+			<p class="text-5">Lorem ipsum dolor sit amet Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+				dolore eu</p>
+			</div>
+		</div>
+		
+		<div class="section-6">
+			<div class="drop"></div>
+			<img src="./Assets/images/nebula-2.png" alt="nebula">
+			<div class="circle"></div>
+			<h1>Projects</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+			<button data-tilt class="myBtn2 btn2" class="bg">
+				<div class="btntext">
+					View All
+				</div>
+			</button>
+		</div>
+
+
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -130,5 +678,6 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 	</body>
 </html>
