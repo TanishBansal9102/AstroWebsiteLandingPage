@@ -943,7 +943,7 @@ to align it properly */
 .section-5 img{
 	position: relative;
     top: 0;
-		width: 100vw;
+		width: auto;
     height: 255vh;
 	mix-blend-mode: color;
 }
