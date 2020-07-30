@@ -1164,6 +1164,8 @@ to align it properly */
 }
 
 .section-6{
+		display: flex;
+		justify-content: center;
 		z-index: 5;
     position: relative;
     height: auto;
@@ -1194,7 +1196,6 @@ to align it properly */
 	transform: rotate(180deg);
 	background-image: linear-gradient( #48DBD8E8, #0287D0E6);
 	z-index: 50;
-	left:47vw;
 }
 
 .section-6 h1{
@@ -1213,7 +1214,6 @@ to align it properly */
 	color: #8B9AB5;
 	font: 1.25rem ModernSans-Light;
 	font-weight: 100;
-	margin-left: 25vw;
 	top: 17vh;
 	letter-spacing: 0px;
 	line-height: 1.75rem;
@@ -1226,7 +1226,6 @@ to align it properly */
 		border: 2px solid #707070;
 		bottom: 60vh;
 		height: 8vh;
-		left: 41vw;
 		top: 48vh;
 		margin-top: 10px;
 		transform-style: preserve-3d;
