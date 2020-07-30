@@ -926,27 +926,29 @@ to align it properly */
 .section-5{
 	z-index: 5;
 	background: transparent linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 9, 0.07) 41%, rgba(10, 10, 10, 0.05) 74%, rgba(0, 0, 0, 1) 100%) 0% 0% no-repeat padding-box;
+	position: relative;
+	top:-10vh;
 }
 
 .section-5 img{
-	position: relative;
+	position: absolute;
 	top:150vh;
 	width: 100vw;
 	mix-blend-mode: lighten;
 }
 
 .section-5 .circle{
-	position: relative;
-	top: -85vh;
-	left: 4vw;
+	position: absolute;
+	top: 165vh;
+	left: 6.75vw;
 	display: inline-block;
 }
 
 .section-5 h1{
 		align-items: center;
-		position: relative;
-		top: -85vh;
-    left: 3.25vw;
+		position: absolute;
+		top: 158.25vh;
+    left: 10.5vw;
 		display: inline-block;
 		font:3rem PetitaBold;
 		font-weight: 100;
@@ -957,9 +959,9 @@ to align it properly */
 
 .section-5 .text-0{
 	z-index: 20;
-	position: relative;
-	top:-80vh;
-	left: 5vw;
+	position: absolute;
+	top:178.25vh;
+	left: 7.5vw;
 	color: #8B9AB5;
 	font: 1.25rem ModernSans-Light;
 	margin-top: 0;
@@ -972,10 +974,10 @@ to align it properly */
 	z-index: 20;
 	color:rgba(62, 131, 136, 1);
 	font: 147px DINPro-Light;
-	letter-spacing: 2.03px;
-	position: relative;
-	left: 5vw;
-	top: -90vh;
+	letter-spacing: 0;
+	position: absolute;
+	left: 6.75vw;
+	top: 190.25vh;
 }
 
 .section-5 .heading-1{
@@ -983,69 +985,72 @@ to align it properly */
 	color: rgba(255, 255, 255, 1);
 	font:1.75rem DINPro-Light;
 	font-weight: 100;
-	position: relative;
-	top: -135vh;
-	left: 17.5vw;
+	position: absolute;
+	top: 214.25vh;
+	left: 15.6vw;
 	letter-spacing: 0.4px;
+	margin-left: 35px;
 }
 
 .section-5 .text-1{
 	color: rgba(105, 118, 138, 1);
 	z-index: 20;
-	position: relative;
-	top: -135.3vh;
-	left: 17.5vw;
+	position: absolute;
+	top: 228vh;
+	left: 15.6vw;
 	font: 1.25rem DINPro-Medium;
 	margin-top: 0;
 	line-height: 1.75rem;
-	width: 50vw;
+	width: 44vw;
 	font-weight: 100;
-	width: 43vw;
+	margin-left: 35px;
 }
 
 .section-5 .number-2{
 	z-index: 20;
 	color:rgba(62, 131, 136, 1);
 	font: 147px DINPro-Light;
-	letter-spacing: 2.03px;
-	position: relative;
+	letter-spacing: 0;
+	position: absolute;
 	left: 35vw;
-	top: -150vh;
+	top: 225.25vh;
 }
 
 .section-5 .heading-2{
 	z-index: 20;
 	color: rgba(255, 255, 255, 1);
 	font-weight: 100;
-	position: relative;
+	position: absolute;
 	font:1.75rem DINPro-Light;
-	top: -195vh;
-	left: 48.5vw;
+	top: 250vh;
+	left: 45.5vw;
 	letter-spacing: 0.4px;
+	margin-left: 35px;
 }
 
 .section-5 .text-2{
 	color: rgba(105, 118, 138, 1);
 	z-index: 20;
-	position: relative;
-	top: -195.5vh;
-	left: 48.5vw;
+	position: absolute;
+	top: 263.25vh;
+	left: 45.5vw;
 	font: 1.25rem DINPro-Medium;
 	margin-top: 0;
 	line-height: 1.75rem;
 	width: 50vw;
 	font-weight: 100;
 	width: 43vw;
+	margin-left: 35px;
 }
 
 .section-5 .number-3{
 	z-index: 20;
 	color:rgba(62, 131, 136, 1);
 	font: 147px DINPro-Light;
-	letter-spacing: 2.03px;
-	position: relative;
-	left: 5vw;
-	top: -210vh;
+	letter-spacing: 0px;
+	position: absolute;
+	left: 6.75vw;
+	top: 260.25vh;
 }
 
 .section-5 .heading-3{
@@ -1053,24 +1058,26 @@ to align it properly */
 	color: rgba(255, 255, 255, 1);
 	font:1.75rem DINPro-Light;
 	font-weight: 100;
-	position: relative;
-	top: -255.3vh;
-	left: 17.5vw;
+	position: absolute;
+	top: 284.5vh;
+	left: 16.9vw;
 	letter-spacing: 0.4px;
+	margin-left: 35px;
 }
 
 .section-5 .text-3{
 	color: rgba(105, 118, 138, 1);
 	z-index: 20;
-	position: relative;
-	top: -255.5vh;
-	left: 17.5vw;
+	position: absolute;
+	top: 298vh;
 	font: 1.25rem DINPro-Medium;
 	margin-top: 0;
 	line-height: 1.75rem;
-	width: 50vw;
 	font-weight: 100;
 	width: 43vw;
+	left: 16.9vw;
+	letter-spacing: 0.4px;
+	margin-left: 35px;
 }
 
 .section-5 .number-4{
@@ -1078,9 +1085,9 @@ to align it properly */
 	color:rgba(62, 131, 136, 1);
 	font: 147px DINPro-Light;
 	letter-spacing: 2.03px;
-	position: relative;
+	position: absolute;
 	left: 35vw;
-	top: -270vh;
+	top: 295.25vh;
 }
 
 .section-5 .heading-4{
@@ -1088,24 +1095,25 @@ to align it properly */
 	color: rgba(255, 255, 255, 1);
 	font:1.75rem DINPro-Light;
 	font-weight: 100;
-	position: relative;
-	top: -315vh;
-	left: 48.5vw;
+	position: absolute;
+	top: 319.5vh;
+	left: 45.5vw;
 	letter-spacing: 0.4px;
+	margin-left: 35px;
 }
 
 .section-5 .text-4{
 	color: rgba(105, 118, 138, 1);
 	z-index: 20;
-	position: relative;
-	top: -315.5vh;
-	left: 48.5vw;
+	position: absolute;
+	top: 333vh;
+	left: 45.5vw;
 	font: 1.25rem DINPro-Medium;
 	margin-top: 0;
 	line-height: 1.75rem;
-	width: 50vw;
 	font-weight: 100;
 	width: 43vw;
+	margin-left: 35px;
 }
 
 .section-5 .number-5{
@@ -1113,9 +1121,9 @@ to align it properly */
 	color:rgba(62, 131, 136, 1);
 	font: 147px DINPro-Light;
 	letter-spacing: 2.03px;
-	position: relative;
-	left: 5vw;
-	top: -328vh;
+	position: absolute;
+	left: 6.75vw;
+	top: 330.25vh;
 }
 
 .section-5 .heading-5{
@@ -1123,22 +1131,23 @@ to align it properly */
 	color: rgba(255, 255, 255, 1);
 	font:1.75rem DINPro-Light;
 	font-weight: 100;
-	position: relative;
-	top: -373vh;
-	left: 17.5vw;
+	position: absolute;
+	top: 354.5vh;
+	left: 16.9vw;
 	letter-spacing: 0.4px;
+	margin-left: 35px;
 }
 
 .section-5 .text-5{
 	color: rgba(105, 118, 138, 1);
 	z-index: 20;
-	position: relative;
-	top: -373.5vh;
-	left: 17.5vw;
+	position: absolute;
+	top: 367.6vh;
+	left: 16.9vw;
 	font: 1.25rem DINPro-Medium;
 	margin-top: 0;
 	line-height: 1.75rem;
-	width: 50vw;
 	font-weight: 100;
 	width: 43vw;
+	margin-left: 35px;
 }
