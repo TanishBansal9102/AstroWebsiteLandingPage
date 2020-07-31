@@ -423,16 +423,14 @@ to align it properly */
 
 	.section-2 .text{
 		display: inline;
-		font-family: sans-serif;
-		font-size: 3vw;
+		font: 3vw PetitaBold;
 		font-weight: 100;
 		color: #FFFFFF;
 	}
 
 	.section-2 p{
 		color: #8B9AB5;
-		font-family: 'Lato', sans-serif;
-		font-size: 1.5vw;
+		font: 1.5vw ModernSans-Light;
 		padding-left: 0.9rem;
 		margin-top: 7vh;
 		margin-bottom: 7vh;
@@ -554,15 +552,13 @@ to align it properly */
 	}
 	.section-2 .text{
 		display: inline;
-		font-family: sans-serif;
-		font-size: 0.8rem;
+		font: 0.8rem PetitaBold;
 		font-weight: 100;
 		color: #FFFFFF;
 	}
 	.section-2 p{
 		color: #8B9AB5;
-		font-family: 'Lato', sans-serif;
-		font-size: 8px;
+		font: 8px ModernSans-Light;
 		padding-left: 0.3rem;
 		margin-top: 10px;
 		margin-right: 0;
@@ -683,8 +679,7 @@ to align it properly */
 		top: 10vh;
     	left: 5vw;
 		display: inline-block;
-		font-family: sans-serif;
-		font-size: 3rem;
+		font: 3rem PetitaBold;
 		font-weight: 100;
 		margin-left: 10px;
 	}
@@ -703,8 +698,7 @@ to align it properly */
 		width: 70vw;
 		margin-left: 1vw;
 		color: #8B9AB5;
-		font-family: 'Lato', sans-serif;
-		font-size: 1.25rem;
+		font: 1.25rem ModernSans-Light;
 		margin-top: 5vh;
 		line-height: 1.75rem;
 	}
@@ -757,8 +751,7 @@ to align it properly */
 		top: 8.293460925039872vh;
     left: 8vw;
 		display: inline-block;
-		font-family: sans-serif;
-		font-size: 0.8rem;
+		font:0.8rem PetitaBold;
 		font-weight: 100;
 	}
 	.section-3 .circle{
@@ -774,8 +767,7 @@ to align it properly */
 		width: 70vw;
 		margin-left: 1vw;
 		color: #8B9AB5;
-		font-family: 'Lato', sans-serif;
-		font-size: 8px;
+		font: 8px ModernSans-Light;
 		margin-top: -12.5px;
 		line-height: 10px;
 	}
@@ -851,10 +843,9 @@ to align it properly */
 }
 
 .section-4 h1{
-	font-size: 3rem;
 	color: white;
+	font: 3rem PetitaBold;
 	font-weight: 200;
-	font-family: sans-serif;
 	margin-top:2vh;
 	width: 100%;
 	text-align: center;
@@ -865,11 +856,11 @@ to align it properly */
 	position: relative;
 	color: #8B9AB5;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.25rem;
+	font: 1.25rem ModernSans-Light;
 	width: 45vw;
 	margin-top: 4vh;
 	margin-left: 25%;
+	line-height: 1.75rem;
 }
 
 .cards{
@@ -910,12 +901,14 @@ to align it properly */
 	margin-right: auto;
 	margin-top: 10vh;
 	display: inline-block;
+	width: 200px;
 }
 
 
 .btn2 .btntext{
 	color: #707070;
 	transform: translateZ(20px);
+	font-size: x-large;
 }
 
 .section-4 .btn2:hover > .btntext{
@@ -942,15 +935,15 @@ to align it properly */
 
 .section-5 img{
 	position: relative;
-    top: 0;
-		width: auto;
-    height: 255vh;
+  top: 0;
+	width: auto;
+  height: 255vh;
 	mix-blend-mode: color;
 }
 
 .section-5 .circle{
 	position: absolute;
-	top: 20vh;
+	top: 132px;
 	left: 6.75vw;
 	display: inline-block;
 }
@@ -958,8 +951,8 @@ to align it properly */
 .section-5 h1{
 		align-items: center;
 		position: absolute;
-		top: 13.25vh;
-    	left: 10.5vw;
+		top: 87px;
+    left: 10.5vw;
 		display: inline-block;
 		font:3rem PetitaBold;
 		font-weight: 100;
@@ -1209,7 +1202,7 @@ to align it properly */
 
 .section-6 p{
 	position: absolute;
-	width: 50%;
+	width: 650px;
 	text-align: center;
 	color: #8B9AB5;
 	font: 1.25rem ModernSans-Light;
@@ -1217,6 +1210,12 @@ to align it properly */
 	top: 17vh;
 	letter-spacing: 0px;
 	line-height: 1.75rem;
+}
+
+@media (max-width: 670px) {
+	.section-6 p{
+		width: 480px;
+	}
 }
 
 .section-6 .btn2{
@@ -1230,6 +1229,7 @@ to align it properly */
 		margin-top: 10px;
 		transform-style: preserve-3d;
 		transform: perspective(1000px);
+		width: 200px;
 	}
 	.section-6 .btn2:hover{
 		border-color: #FFFFFF;
@@ -1240,6 +1240,7 @@ to align it properly */
 	transition: 0.4s ease-in-out;
 	}
 	.section-6 .btn2 .btntext{
+		font-size: x-large;
 		transform: translateZ(20px);
 	}
 	
