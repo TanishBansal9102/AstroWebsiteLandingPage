@@ -646,8 +646,6 @@ to align it properly */
 
 }
 
-
-@media (min-width: 501px){
 	.section-3{
 		scroll-snap-align: start;
 		z-index: 5;
@@ -662,13 +660,13 @@ to align it properly */
 
 	.section-3 img{
 		position: relative;
-		display: block;
-		height: 116vh;
-		z-index: -10;
+    height: 1000px;
+    width: auto;
 		mix-blend-mode: hue;
 		margin-left: 50%;
 		transform: translateX(-50%);
-	}
+  }
+  
 	.section-3 .content-3{
 		position: absolute;
 		top: 1vh;
@@ -676,9 +674,9 @@ to align it properly */
 
 	.section-3 h1{
 		align-items: center;
-		position: relative;
-		top: 10vh;
-    	left: 5vw;
+		position: absolute;
+		top: 28px;
+    left: 138px;
 		display: inline-block;
 		font: 3rem PetitaBold;
 		font-weight: 100;
@@ -686,35 +684,35 @@ to align it properly */
 	}
 
 	.section-3 .circle{
-		position: relative;
-		top: 10vh;
-		left: 4vw;
+		position: absolute;
+		top: 72px;
+		left: 77px;
 		display: inline-block;
 	}
 
 	.section-3 p{
-		position: relative;
-		top: 17vh;
-		left: 4vw;
-		width: 70vw;
-		margin-left: 1vw;
+		position: absolute;
+		top: 150px;
+		left: 90px;
+		width: 611px;
 		color: #8B9AB5;
 		font: 1.25rem ModernSans-Light;
 		margin-top: 5vh;
 		line-height: 1.75rem;
 	}
 	.section-3 .btn2{
-		position: relative;
+		position: absolute;
 		outline: none;
 		background: none;
 		border: 2px solid #707070;
-		bottom: 60vh;
-		height: 8vh;
-		left: 4vw;
-		top: 18vh;
+		left: 77px;
+		top: 375px;
 		margin-top: 10px;
 		transform-style: preserve-3d;
-		transform: perspective(1000px);
+    transform: perspective(1000px);
+		height: 60px;
+		width: 200px;
+		padding: 9px;
 	}
 	.section-3 .btn2:hover{
 		border-color: #FFFFFF;
@@ -727,77 +725,45 @@ to align it properly */
 	.section-3 .btn2 .btntext{
 		transform: translateZ(20px);
 		}
-	
-}
-@media (max-width: 501px){
-	.section-3{
-		z-index: 5;
-		color: white;
-		position: relative;
-		width: 100vw;
-		top:125vh;
-		background: transparent linear-gradient(180deg, #191919 0%, #191919 10%, #00000000 52%, #00000000 100%) 0% 0% no-repeat padding-box;
-		opacity: 1;
-	}
-	.section-3 img{
-		display: block;
-		width: 100vw;
-		height: auto;
-		z-index: -10;
-		mix-blend-mode: hue;
-	}
-	.section-3 h1{
-		align-items: center;
-		position: relative;
-		top: 8.293460925039872vh;
-    left: 8vw;
-		display: inline-block;
-		font:0.8rem PetitaBold;
-		font-weight: 100;
-	}
-	.section-3 .circle{
-		position: relative;
-		top: 10vh;
-		left: 4vw;
-		display: inline-block;
-	}
-	.section-3 p{
-		position: relative;
-		top: 17vh;
-		left: 4vw;
-		width: 70vw;
-		margin-left: 1vw;
-		color: #8B9AB5;
-		font: 8px ModernSans-Light;
-		margin-top: -12.5px;
-		line-height: 10px;
-	}
-	.section-3 .btn2{
-		position: relative;
-		outline: none;
-		background: none;
-		border: 2px solid #707070;
-		top: 21.5311004784689vh;
-		height: 3.9872408293460926vh;
-		left: 4vw;
-		width: 16vw;
-		transform-style: preserve-3d;
-		transform: perspective(1000px);
-	}
-	.section-3 .btn2:hover{
-		border-color: #FFFFFF;
-		transition: 0.4s ease-in-out;
-}
-.section-3 .btn2:hover > .btntext{
-	color: #FFFFFF;
-	transition: 0.4s ease-in-out;
-}
-	.section-3 .btntext{
-		transform: translateZ(20px);
-		margin-bottom: 0.45vw;
-	}
-}
 
+    @media (max-width: 970px){
+      .section-3 p{
+        left: 10vw;
+        width: 60vw;
+      }
+
+      .section-3 .btn2{
+        top: 420px;
+        left:9vw;
+      }
+
+      .section-3 .circle{
+        left:8.5vw;
+      }
+
+      .section-3 h1{
+        left: 15vw;
+      }
+    }
+
+    @media (max-width: 700px){
+      .section-3 p{
+        left: 5vw;
+      }
+
+      .section-3 .btn2{
+        top: 500px;
+        left:3vw;
+      }
+
+      .section-3 .circle{
+        left:3vw;
+      }
+
+      .section-3 h1{
+        left:11vw;
+      }
+    }
 
 #ham{
 	position: fixed;
@@ -901,11 +867,14 @@ to align it properly */
 	margin-left: 39%;
 	margin-right: auto;
 	margin-top: 10vh;
-	display: inline-block;
+  display: inline-block;
+	height: 60px;
+  width: 200px;
 }
 
 
 .btn2 .btntext{
+  font-size: x-large;
 	color: #707070;
 	transform: translateZ(20px);
 }
@@ -918,8 +887,6 @@ to align it properly */
 	border-color: #FFFFFF;
 	transition: 0.4s ease-in-out;
 }
-
-
 
 
 .section-5{
@@ -1300,7 +1267,7 @@ to align it properly */
 		height: auto;
 	}
 }
-@media (min-width: 206vh){
+@media (min-width: 1778px){
 	.section-3 img{
 		width: 100vw;
 		height: auto;
