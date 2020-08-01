@@ -1144,7 +1144,7 @@ to align it properly */
 	color: rgba(105, 118, 138, 1);
 	z-index: 20;
 	position: absolute;
-	top: 1px;
+	top: 1447px;
 	left: 230px;
 	font: 1.25rem DINPro-Medium;
 	margin-top: 0;
@@ -1288,13 +1288,13 @@ to align it properly */
 		transform: translateZ(20px);
 	}
 /*basically (width of img/height of image)*height specified in vh */	
-@media (min-width: 208vh){
+@media (min-width: 1327.13px){
 	.section-6 img{
 		width: 100vw;
 		height: auto;
 	}
 }
-@media (min-width: 218.8vh){
+@media (min-width: 1437.677162px){
 	.section-5 img{
 		width: 100vw;
 		height: auto;
