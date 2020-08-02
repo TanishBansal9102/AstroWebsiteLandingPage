@@ -797,7 +797,7 @@ to align it properly */
 	z-index: 10;
 	position: relative;
 	top:131vh;
-	width: 107vw;
+	width: 100%;
 	height: auto;
 	}
 
@@ -806,7 +806,6 @@ to align it properly */
 	top:0;
 	transform: rotate(180deg);
 	background-image: linear-gradient( #48DBD8E8, #0287D0E6);
-	margin-left: 46vw;
 }
 
 .section-4 h1{
@@ -814,9 +813,6 @@ to align it properly */
 	font: 3rem PetitaBold;
 	font-weight: 200;
 	margin-top:2vh;
-	width: 100%;
-	text-align: center;
-	margin-left:-5vw;
 }
 
 .section-4 p{
@@ -826,13 +822,10 @@ to align it properly */
 	font: 1.25rem ModernSans-Light;
 	width: 45vw;
 	margin-top: 4vh;
-	margin-left: 25%;
 	line-height: 1.75rem;
 }
 
 .cards{
-	margin-left:6.75vw;
-	margin-right: auto;
 	margin-top: 15vh;
 	height: 12.5vw;
   	display: grid;
@@ -864,8 +857,6 @@ to align it properly */
 	background: none;
 	outline: none;
 	border: 2px solid #707070;
-	margin-left: 39%;
-	margin-right: auto;
 	margin-top: 10vh;
   display: inline-block;
 	height: 60px;
@@ -1272,4 +1263,10 @@ to align it properly */
 		width: 100vw;
 		height: auto;
 	}
+}
+
+.centerer{
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
